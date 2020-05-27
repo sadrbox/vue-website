@@ -1,0 +1,40 @@
+﻿@import "variable";
+
+.row {
+  display: flex;
+  .col {
+    min-width:auto;
+  }
+  .col-1\/4 {
+    width: col(4);
+  }
+  .col-2\/4 {
+    width: col(8);
+  }
+  .col-3\/4 {
+    width: col(12);
+  }
+  .col-4\/4 {
+    width: col(16);
+  }
+}
+[class^='col']{
+  margin: 0 $gap;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: $container-width + px;
+}
+
+#header, #content, #footer {
+  [class^="col"] {
+  }
+}
+
+#content {
+  margin: $space 0;
+}
+
+#footer {}
+

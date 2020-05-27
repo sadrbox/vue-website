@@ -1,0 +1,12 @@
+﻿<template>
+  <div id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-2/4">
+          <h2>footer</h2>
+        </div>
+        <div class="col-2/4"></div>
+      </div>
+    </div>
+  </div>
+</template>
