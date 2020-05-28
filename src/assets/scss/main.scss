@@ -1,9 +1,11 @@
 ﻿@import "variable";
 @import "reset";
 
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&display=swap');
+
 body {
-  font: normal 14pt Cambria, Georgia, serif;
-  line-height: 1.6rem;
+  font: normal 12pt 'Merriweather', serif;
+  line-height: 1.8rem;
 }
 
 img,
