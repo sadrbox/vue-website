@@ -6,6 +6,7 @@
 body {
   font: normal 12pt 'Merriweather', serif;
   line-height: 1.8rem;
+  background: rgb(204,204,204);
 }
 
 img,
@@ -17,4 +18,18 @@ video {
 
 .box {
   padding: $gap;
+}
+.text {
+  text-align: justify;
+  text-indent: 1.8rem;
+
+  // testing
+  padding: 70px;
+  height: 800px;
+  background: #fff;
+  background: white;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.5cm;
+  box-shadow: 3px 5px 0.5cm rgba(0,0,0,0.5);
 }

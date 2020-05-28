@@ -2,7 +2,7 @@
   <div id="header">
     <div class="container">
       <div class="row">
-        <div class="col-3/4">
+        <div class="col-xl-6 col-l-8 col-m-6 col-s-12">
           <div class="box">
             <div class="header-website">
               <img class="header-website__logo" src="@/assets/img/logo.png" alt="">
@@ -13,9 +13,10 @@
             </div>
           </div>
         </div>
-        <div class="col-1/4">
+        <div class="col-xl-3 col-l-4 col-m-6">
           Menu
         </div>
+        <div class="col-xl-3">contatcs</div>
       </div>
     </div>
   </div>

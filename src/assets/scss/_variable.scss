@@ -1,7 +1,7 @@
 $container-width: 1280; // px
 
 // const-column
-$const-column-outer: $container-width / 16; // 1280 / 16 = 80
+$const-column-outer: $container-width / 12; // 1280 / 16 = 80
 $const-column-inner: ($const-column-outer - ($const-column-outer / 5));
 $column: ($const-column-inner / $container-width) * 100%; //
 

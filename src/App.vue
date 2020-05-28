@@ -26,7 +26,7 @@ export default {
 /* develop styling */
 #header, #content, #footer {
   [class^="col"]{
-    //background: green;
+    // background: green;
   }
 }
 #grid > div {
