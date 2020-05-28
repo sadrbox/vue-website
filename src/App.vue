@@ -19,14 +19,17 @@ export default {
 </script>
 
 <style lang="scss">
-@import "@/assets/scss/main.scss";
+@import "@/assets/scss/main";
 
 #app {}
 
 /* develop styling */
 #header, #content, #footer {
   [class^="col"]{
-    background: green;
+    //background: green;
   }
+}
+#grid > div {
+  //background: red;
 }
 </style>

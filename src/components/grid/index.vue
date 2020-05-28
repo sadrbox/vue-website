@@ -1,24 +1,41 @@
 ﻿<template>
   <div id="grid">
-    <div>1</div>
-    <div>2</div>
-    <div>3</div>
-    <div>4</div>
-    <div>5</div>
-    <div>6</div>
-    <div>7</div>
-    <div>8</div>
-    <div>9</div>
-    <div>10</div>
-    <div>11</div>
-    <div>12</div>
-    <div>13</div>
-    <div>14</div>
-    <div>15</div>
-    <div>16</div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
   </div>
 </template>
 <script></script>
 <style lang="scss">
-@import "@/assets/scss/grid.scss";
+@import "@/assets/scss/_variable";
+#grid {
+  margin: 0 auto;
+  height: 0px;
+  max-width: $container-width + px;
+  display: flex;
+
+  div {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    //background: red;
+    height: 100vh;
+    width: $column;
+    margin: 0 $gap;
+  }
+}
 </style>
