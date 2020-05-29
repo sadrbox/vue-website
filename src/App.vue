@@ -23,13 +23,4 @@ export default {
 
 #app {}
 
-/* develop styling */
-#header, #content, #footer {
-  [class^="col"]{
-    // background: green;
-  }
-}
-#grid > div {
-  //background: red;
-}
 </style>

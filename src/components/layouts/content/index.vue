@@ -10,7 +10,7 @@
             </div>
           </div>
         </div>
-        <div class="col-4">text</div>
+        <div class="col-xl-4 col-l-4">text</div>
       </div>
     </div>
   </div>

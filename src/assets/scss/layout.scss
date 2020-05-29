@@ -1,8 +1,10 @@
 ﻿@import "variable";
 
+// min-width - не меньше чем указано
+// max-width - не больше чем указано
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1201px) {
+
+@media all and (min-width: 1281px) {
   .col-xl-1 {width: col(1);}
   .col-xl-2 {width: col(2);}
   .col-xl-3 {width: col(3);}
@@ -16,12 +18,10 @@
   .col-xl-11 {width: col(11);}
   .col-xl-12 {width: col(12);}
 
-  [class*='col-xl-']{display:flex !important;}
-
+  [class*='col-xl']{display:flex (!important);}
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (max-width: 1200px) {
+@media all and (min-width: 1025px) and (max-width: 1280px) {
   .col-l-1 {width: col(1);}
   .col-l-2 {width: col(2);}
   .col-l-3 {width: col(3);}
@@ -35,11 +35,10 @@
   .col-l-11 {width: col(11);}
   .col-l-12 {width: col(12);}
 
-  [class*='col-l-']{display:flex !important;}
+  [class*='col-l']{display:flex (!important);}
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 1000px) {
+@media all and (min-width: 769px) and (max-width: 1024px) {
   .col-m-1 {width: col(1);}
   .col-m-2 {width: col(2);}
   .col-m-3 {width: col(3);}
@@ -53,11 +52,10 @@
   .col-m-11 {width: col(11);}
   .col-m-12 {width: col(12);}
 
-  [class*='col-m']{display:block !important;}
+  [class*='col-m']{display:flex (!important);}
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 800px) {
+@media all and (min-width: 481px) and (max-width: 768px) {
   .col-s-1 {width: col(1);}
   .col-s-2 {width: col(2);}
   .col-s-3 {width: col(3);}
@@ -71,51 +69,55 @@
   .col-s-11 {width: col(11);}
   .col-s-12 {width: col(12);}
 
-  [class*='col-s-']{display:flex !important;}
+  [class*='col-s']{display:flex (!important);justify-content: center;}
 }
 
-/* Extra small devices (phones, 600px and down) */
-//@media only screen and (max-width: 600px) {
-/*  .col-1 {width: col(1);}
-.col-2 {width: col(2);}
-.col-3 {width: col(3);}
-.col-4 {width: col(4);}
-.col-5 {width: col(5);}
-.col-6 {width: col(6);}
-.col-7 {width: col(7);}
-.col-8 {width: col(8);}
-.col-9 {width: col(9);}
-.col-10 {width: col(10);}
-.col-11 {width: col(11);}
-.col-12 {width: col(12);}
- */
-//}
+@media all and (min-width: 320px) and (max-width: 480px) { 
+  .col-xs-1 {width: col(1);}
+  .col-xs-2 {width: col(2);}
+  .col-xs-3 {width: col(3);}
+  .col-xs-4 {width: col(4);}
+  .col-xs-5 {width: col(5);}
+  .col-xs-6 {width: col(6);}
+  .col-xs-7 {width: col(7);}
+  .col-xs-8 {width: col(8);}
+  .col-xs-9 {width: col(9);}
+  .col-xs-10 {width: col(10);}
+  .col-xs-11 {width: col(11);}
+  .col-xs-12 {width: col(12);}
+
+  [class*='col-s']{display:flex (!important);justify-content: center;}
+}
 
 .centered {
   justify-content: center;
 }
 .row {
   display: flex;
+  flex-wrap: wrap;
 }
 
-[class^='col']{
+[class*='col']{
   margin: 0 $gap;
   display: none;
 }
 
 .container {
   margin: 0 auto;
+  min-width: 480px;
   max-width: $container-width + px;
 }
 
-#header, #content, #footer {
-  [class^="col"] {
-  }
-}
 
 #content {
   margin: $space 0;
 }
 
-#footer {}
-
+// development
+[class*='col']{
+  background: green;
+}
+#grid > div {
+  background: red;
+}
+#content, #footer { display:none; }

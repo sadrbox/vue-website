@@ -1,10 +1,12 @@
 ﻿@import "variable";
 @import "reset";
 
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;600&display=swap');
+
 
 body {
-  font: normal 12pt 'Merriweather', serif;
+  font: 300 12pt 'Roboto Slab', serif;
   line-height: 1.8rem;
   background: rgb(204,204,204);
 }
@@ -24,12 +26,12 @@ video {
   text-indent: 1.8rem;
 
   // testing
-  padding: 70px;
-  height: 800px;
-  background: #fff;
-  background: white;
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 0.5cm;
-  box-shadow: 3px 5px 0.5cm rgba(0,0,0,0.5);
+  //  padding: 70px;
+  //  height: 800px;
+  //  background: #fff;
+  //  background: white;
+  //  display: block;
+  //  margin: 0 auto;
+  //  margin-bottom: 0.5cm;
+  //  box-shadow: 3px 5px 0.5cm rgba(0,0,0,0.5);
 }
