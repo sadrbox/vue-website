@@ -2,19 +2,19 @@
   <div id="header">
     <div class="container">
       <div class="row">
-        <div class="col-xl-2 col-l-2 col-m-3 col-s-12 col-xs-12">
+        <div class="col-xl-2 col-l-2 col-m-4 col-s-12 col-xs-12">
           <div class="header__logo">
             <img class="header__logo__img" src="@/assets/img/logo.png" alt="">
           </div>
         </div>
-        <div class="col-xl-6 col-l-6 col-m-5 col-s-12 col-xs-12">
+        <div class="col-xl-6 col-l-6 col-m-8 col-s-12 col-xs-12">
           <div class="header__name">
             <h1 class="header__name__title">Отдел образования <br/> Толебийского района</h1>
             <hr class="header__name__border" />
             <h5 class="header__name__subtitle">официальный интернет-ресурс</h5>
           </div>
         </div>
-        <div class="col-xl-2 col-l-4 col-m-4">
+        <div class="col-xl-2 col-l-4">
           Menu
         </div>
         <div class="col-xl-2">contatcs</div>
