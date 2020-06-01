@@ -70,9 +70,10 @@
   .col-s-12 {width: col(12);}
 
   [class*='col-s']{display:flex (!important);}
+  [class*='col']{justify-content: center;}
 }
 
-@media all and (min-width: 320px) and (max-width: 480px) { 
+@media all and (max-width: 480px) { 
   .col-xs-1 {width: col(1);}
   .col-xs-2 {width: col(2);}
   .col-xs-3 {width: col(3);}
@@ -87,10 +88,11 @@
   .col-xs-12 {width: col(12);}
 
   [class*='col-s']{display:flex (!important);}
+  [class*='col']{justify-content: center;}
 }
 
 @media all and (max-width:768px) {
-  [class*='col']{justify-content: center;}
+  //[class*='col']{justify-content: center;}
 }
 
 .centered {

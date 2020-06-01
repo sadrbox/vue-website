@@ -47,16 +47,17 @@
   text-transform:uppercase;
 }
 .header__name__subtitle {
-  @include font(1rem);
+  font:300 12pt 'Roboto', serif;
+  @include font(0.7rem);
   color: #444;
   text-transform:uppercase;
 }
 .header__lang {
-  width: 100%;
+  //width: 100%;
   padding: 10px;
   display:flex;
   align-items: flex-start;
-  justify-content:center;
+  //justify-content:center;
   .header__lang__link {
     font:300 12pt 'Roboto', serif;
     justify-content: center;
@@ -65,6 +66,8 @@
     text-decoration:none;
     color: #fff;
     background-color: #999;
+    width:70px;
+    text-align:center;
     &:first-child {
       margin-right: $space;
     }
