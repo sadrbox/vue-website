@@ -29,7 +29,6 @@
 .header__logo {
   display:flex;
   align-items: center;
-  margin-top:20px;
 }
 .header__logo__img {
 
@@ -51,6 +50,9 @@
 }
 
 @media all and (max-width:768px) {
+  .header__logo {
+    margin-top:20px;
+  }
   .header__name {
     text-align: center;
     .header__name__title {
