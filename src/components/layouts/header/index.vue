@@ -14,8 +14,11 @@
             <h5 class="header__name__subtitle">официальный интернет-ресурс</h5>
           </div>
         </div>
-        <div class="col-xl-4 col-l-4">
-          Menu
+        <div class="col-xl-4 col-l-4 col-m-12 col-s-12 col-xs-12">
+          <div class="header__lang">
+            <a href="#" class="header__lang__link">Қазақша</a>
+            <a href="#" class="header__lang__link header__lang__link--active">Русский</a>
+          </div>
         </div>
       </div>
     </div>
@@ -48,7 +51,39 @@
   color: #444;
   text-transform:uppercase;
 }
+.header__lang {
+  width: 100%;
+  padding: 10px;
+  display:flex;
+  align-items: flex-start;
+  justify-content:center;
+  .header__lang__link {
+    font:300 12pt 'Roboto', serif;
+    justify-content: center;
+    padding: 5px 10px;
+    border-radius: 3px;
+    text-decoration:none;
+    color: #fff;
+    background-color: #999;
+    &:first-child {
+      margin-right: $space;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .header__lang__link--active {
+    background-color: #3f51b5;
+  }
+}
 
+
+
+/* In resize display */
+@media all and (min-width:769px) {
+  .header__lang__link {
+  }
+}
 @media all and (max-width:768px) {
   .header__logo {
     margin-top:20px;
@@ -56,7 +91,6 @@
   .header__name {
     text-align: center;
     .header__name__title {
-      //margin-top: 20px;
     }
     .header__name__border{
       border:1px solid #ccc;

@@ -90,7 +90,7 @@
 }
 
 @media all and (max-width:768px) {
-  [class*='col']{display:flex (!important);justify-content: center;}
+  [class*='col']{justify-content: center;}
 }
 
 .centered {
@@ -119,9 +119,9 @@
 
 // development
 [class*='col']{
-  background: rgba(100,200,200, .5);
+  //background: rgba(100,200,200, .5);
 }
 #grid > div {
-  background: rgba(200,100,100, .5);
+  //background: rgba(200,100,100, .5);
 }
 #content, #footer { display:none; }
