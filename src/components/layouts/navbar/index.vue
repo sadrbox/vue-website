@@ -16,7 +16,7 @@
 </template>
 
 <script>
-//import { faChessQueen } from '@fortawesome/free-solid-svg-iconf'
+
 </script>
 <style lang="scss" scoped>
 @import "@/assets/scss/_variable";
@@ -44,7 +44,7 @@ $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
    */
 //display:none;
 }
-#menu {
+#nav, #menu {
   display: none;
 }
 </style>
