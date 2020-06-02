@@ -57,11 +57,11 @@
   text-transform:uppercase;
 }
 .header__lang {
-  //width: 100%;
+  flex: 0 0 100%;
+  background:rgba(1,1,1,.2);
   padding: 10px 0px;
   display:flex;
   align-items: flex-start;
-  //justify-content:center;
   .header__lang__link {
     font:300 12pt 'Roboto', serif;
     justify-content: center;
