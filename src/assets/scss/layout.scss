@@ -69,8 +69,7 @@
   .col-s-11 {width: col(11);}
   .col-s-12 {width: col(12);}
 
-  [class*='col-s']{display:flex (!important);}
-  [class*='col']{justify-content: center;}
+  [class*='col-s']{display:flex (!important);justify-content: center;}
 }
 
 @media all and (max-width: 480px) { 
@@ -87,8 +86,7 @@
   .col-xs-11 {width: col(11);}
   .col-xs-12 {width: col(12);}
 
-  [class*='col-s']{display:flex (!important);}
-  [class*='col']{justify-content: center;}
+  [class*='col-s']{display:flex (!important);justify-content: center;}
 }
 
 @media all and (max-width:768px) {

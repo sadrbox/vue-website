@@ -1,11 +1,14 @@
 ﻿<template>
-  <div id="navbar">
-    <div class="navbar__bars">
+  <div id="nav">
+    <div class="nav__bars">
       <i class="fas fa-bars fa-2x"></i>
     </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-m-12">
+    <div id="menu">
+      <div class="container">
+        <div class="row">
+          <div class="col-m-12">
+            test navbar layer
+          </div>
         </div>
       </div>
     </div>
@@ -25,7 +28,7 @@ $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
 @import "~@fortawesome/fontawesome-free/scss/brands"; // fab
 
 
-.navbar__bars {
+.nav__bars {
   position:absolute;
   right: 0px;
   top: 0px;
@@ -40,5 +43,8 @@ $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
   width: 30px;
    */
 //display:none;
+}
+#menu {
+  display: none;
 }
 </style>

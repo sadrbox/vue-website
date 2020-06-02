@@ -2,12 +2,12 @@
   <div id="header">
     <div class="container">
       <div class="row centered">
-        <div class="col-xl-2 col-l-2 col-m-4 col-s-4 col-xs-2">
+        <div class="col-xl-2 col-l-2 col-m-3 col-s-4 col-xs-3">
           <div class="header__logo">
             <img class="header__logo__img" src="@/assets/img/logo.png" alt="">
           </div>
         </div>
-        <div class="col-xl-6 col-l-6 col-m-8 col-s-12 col-xs-12">
+        <div class="col-xl-6 col-l-6 col-m-9 col-s-12 col-xs-12">
           <div class="header__name">
             <h1 class="header__name__title">Отдел образования <br/> Толебийского района</h1>
             <hr class="header__name__border" />
@@ -45,6 +45,10 @@
 .header__name__title{
   @include font(2.4rem, bold);
   text-transform:uppercase;
+}
+.header__name__border{
+  border:none;
+  margin: 3px;
 }
 .header__name__subtitle {
   font:300 12pt 'Roboto', serif;
