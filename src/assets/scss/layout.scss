@@ -102,6 +102,7 @@
 }
 
 [class*='col']{
+  //flex-basis:100%;
   margin: 0 $gap;
   display: none;
 }

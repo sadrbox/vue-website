@@ -40,7 +40,8 @@
   display:flex;
   flex-direction: column;
   justify-content: center;
-  margin:0px
+  margin:0px;
+  background:rgba(1,1,1,.2);
 }
 .header__name__title{
   @include font(2.4rem, bold);
@@ -57,7 +58,7 @@
   text-transform:uppercase;
 }
 .header__lang {
-  flex: 0 0 100%;
+  //flex: 0 0 100%;
   background:rgba(1,1,1,.2);
   padding: 10px 0px;
   display:flex;
@@ -109,5 +110,8 @@
 
     }
   }
+}
+#header {
+  display: none;
 }
 </style>
