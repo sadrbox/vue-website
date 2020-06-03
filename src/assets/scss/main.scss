@@ -13,7 +13,7 @@ $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
 
 body {
   font-family:'Roboto Slab', serif;
-  @include font(1.2rem, 300);
+  @include font(1rem, 300);
   //line-height: 1.8rem;
   background: rgba(200,200,200,.4);
 }

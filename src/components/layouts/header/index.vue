@@ -1,13 +1,10 @@
 ﻿<template>
   <div id="header">
     <div class="container">
-      <div class="row centered">
-        <div class="col-xl-2 col-l-2 col-m-3 col-s-4 col-xs-3">
-          <div class="header__logo">
-            <img class="header__logo__img" src="@/assets/img/logo.png" alt="">
-          </div>
+      <div class="row">
+        <div class="col-xl-1 col-l-1 col-m-1 col-s-4 col-xs-3">
         </div>
-        <div class="col-xl-6 col-l-6 col-m-9 col-s-12 col-xs-12">
+        <div class="col-xl-9 col-l-9 col-m-9 col-s-12 col-xs-12">
           <div class="header__name">
             <h1 class="header__name__title">Отдел образования <br/> Толебийского района</h1>
             <hr class="header__name__border" />
@@ -15,10 +12,6 @@
           </div>
         </div>
         <div class="col-xl-4 col-l-4 col-m-12 col-s-12 col-xs-12">
-          <div class="header__lang">
-            <a href="#" class="header__lang__link">Қаз</a>
-            <a href="#" class="header__lang__link header__lang__link--active">Рус</a>
-          </div>
         </div>
       </div>
     </div>
@@ -29,19 +22,16 @@
 <style lang="scss" scoped>
 @import "@/assets/scss/_variable";
 
-.header__logo {
-  display:flex;
-  align-items: center;
+#header {
+  margin: 40px 0;
 }
-.header__logo__img {
 
-}
 .header__name {
   display:flex;
   flex-direction: column;
   justify-content: center;
   margin:0px;
-  background:rgba(1,1,1,.2);
+  //background:rgba(1,1,1,.2);
 }
 .header__name__title{
   @include font(2.4rem, bold);
@@ -85,6 +75,6 @@
   }
 }
 #header {
-  display: none;
+  // display: none;
 }
 </style>
