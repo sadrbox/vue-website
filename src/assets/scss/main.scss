@@ -5,11 +5,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
+$fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/solid"; // fas
+@import "~@fortawesome/fontawesome-free/scss/regular"; // far
+@import "~@fortawesome/fontawesome-free/scss/brands"; // fab
+
 body {
   font-family:'Roboto Slab', serif;
   @include font(1.2rem, 300);
   //line-height: 1.8rem;
-  //background: rgb(204,204,204);
+  background: rgba(200,200,200,.4);
 }
 
 img,

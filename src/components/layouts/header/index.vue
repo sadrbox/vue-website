@@ -57,34 +57,7 @@
   color: #444;
   text-transform:uppercase;
 }
-.header__lang {
-  //flex: 0 0 100%;
-  background:rgba(1,1,1,.2);
-  padding: 10px 0px;
-  display:flex;
-  align-items: flex-start;
-  .header__lang__link {
-    font:300 12pt 'Roboto', serif;
-    justify-content: center;
-    padding: 5px;
-    border-radius: 3px;
-    text-decoration:none;
-    color: #fff;
-    background-color: #999;
-    min-width:40px;
-    text-align:center;
-    text-transform:uppercase;
-    &:first-child {
-      margin-right: 10px;
-    }
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-  .header__lang__link--active {
-    background-color: #3f51b5;
-  }
-}
+
 
 
 

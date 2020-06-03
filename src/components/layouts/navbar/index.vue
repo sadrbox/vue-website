@@ -2,18 +2,25 @@
   <div id="navbar">
     <div class="container">
       <div class="row">
-        <div class="col-xl-2 col-l-2 col-m-2">
-          <div class="logo"></div>
+        <div class="col-xl-1 col-l-1 col-m-1">
+          <div class="navbar__logo">
+            <img class="navbar__logo__img" src="@/assets/img/logo.png" alt="">
+          </div>
         </div>
-        <div class="col-xl-10 col-l-10 col-m-10">
+        <div class="col-xl-9 col-l-9 col-m-9">
           <ul class="nav">
-            <li><a href="#">nav item1</a></li>
-            <li><a href="#">nav item2</a></li>
-            <li><a href="#">nav item3</a></li>
-            <li><a href="#">nav item4</a></li>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Методология</a></li>
+            <li><a href="#">Отдел образования</a></li>
+            <li><a href="#">Разделы</a></li>
+            <li><a href="#">Контакты</a></li>
           </ul>
         </div>
-        <div class="col-m-12">
+        <div class="col-xl-2 col-l-2 col-m-2">
+          <ul class="navbar__lang">
+            <li><a href="#">Қаз</a></li>
+            <li><a href="#" class="navbar__lang__link--active">Рус</a></li>
+          </ul>
           <div class="navbar__bars">
             <i class="fas fa-bars fa-2x"></i>
           </div>
@@ -26,14 +33,9 @@
 <style lang="scss" scoped>
 @import "@/assets/scss/_variable";
 
-$fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
-@import "~@fortawesome/fontawesome-free/scss/fontawesome";
-@import "~@fortawesome/fontawesome-free/scss/solid"; // fas
-@import "~@fortawesome/fontawesome-free/scss/regular"; // far
-@import "~@fortawesome/fontawesome-free/scss/brands"; // fab
-
 #navbar {
-  background:red;
+  background:rgba(255,255,255,1);
+  box-shadow: 0 4px 2px -2px gray;
   .navbar__bars {display:none;}
   .nav {
     display: flex;
@@ -42,9 +44,57 @@ $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
     li {
       margin-right:30px;
       a {
+        color:#3f51b5;
         line-height:30px;
-        //   @include font(1rem);
+        text-decoration:none;
+        &:hover {
+          text-decoration:underline;
+        }
       }
+    }
+  }
+}
+
+.navbar__logo {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex:0 0 100%;
+}
+.navbar__logo__img {
+  max-height:45px;
+}
+
+.navbar__lang {
+  //flex: 0 0 100%;
+  //background:rgba(1,1,1,.2);
+  //padding: 10px 0px;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  flex:0 0 100%;
+  li {
+
+    a {
+      font:300 12pt 'Roboto', serif;
+      justify-content: center;
+      padding: 5px;
+      border-radius: 3px;
+      text-decoration:none;
+      color: #fff;
+      background-color: #999;
+      min-width:40px;
+      text-align:center;
+      text-transform:uppercase;
+      &:first-child {
+        margin-right: 10px;
+      }
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    .navbar__lang__link--active {
+      background-color: #3f51b5;
     }
   }
 }
