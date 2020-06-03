@@ -18,7 +18,7 @@ $gap: $space / 2;
 }
 
 @function lineHeight($size) {
-  @return ($size * 1.3);
+  @return ($size * 1.618);
 }
 
 @mixin font($size, $weight:"normal") {

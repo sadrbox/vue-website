@@ -7,19 +7,20 @@
             <img class="navbar__logo__img" src="@/assets/img/logo.png" alt="">
           </div>
         </div>
-        <div class="col-xl-9 col-l-9 col-m-9">
+        <div class="col-xl-9 col-l-9 col-m-8">
           <ul class="nav">
-            <li><a href="#">Главная</a></li>
+            <li><a href="#"><i class="fas fa-bars fa-2x"></i></a></li>
+            <li><a href="#"><i class="fas fa-home fa-lg"></i></a></li>
             <li><a href="#">Методология</a></li>
             <li><a href="#">Отдел образования</a></li>
-            <li><a href="#">Разделы</a></li>
             <li><a href="#">Контакты</a></li>
           </ul>
         </div>
-        <div class="col-xl-2 col-l-2 col-m-2">
+        <div class="col-xl-2 col-l-2 col-m-3">
           <ul class="navbar__lang">
-            <li><a href="#">Қаз</a></li>
-            <li><a href="#" class="navbar__lang__link--active">Рус</a></li>
+            <li><a href="#">Kaz</a></li>
+            <li><a href="#" class="navbar__lang__link--active">Rus</a></li>
+            <li><a href="#">Eng</a></li>
           </ul>
           <div class="navbar__bars">
             <i class="fas fa-bars fa-2x"></i>
@@ -44,7 +45,8 @@
     li {
       margin-right:30px;
       a {
-        color:#3f51b5;
+        //color:#3f51b5;
+        color:#333;
         line-height:30px;
         text-decoration:none;
         font-weight:normal;

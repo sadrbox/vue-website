@@ -2,17 +2,22 @@
   <div id="header">
     <div class="container">
       <div class="row">
-        <div class="col-xl-1 col-l-1 col-m-1 col-s-4 col-xs-3">
+        <div class="col-l-1 col-m-1">
         </div>
-        <div class="col-xl-9 col-l-9 col-m-9 col-s-12 col-xs-12">
+        <div class="col-xl-10 col-l-8 col-m-8 col-s-8 col-xs-8">
           <div class="header__name">
-            <h1 class="header__name__title">Отдел образования <br/> Толебийского района</h1>
+            <h2>Толебийский район</h2>
+            <h1 class="header__name__title">Отдел образования</h1>
             <hr class="header__name__border" />
-            <h5 class="header__name__subtitle">официальный интернет-ресурс</h5>
+            <h3 class="header__name__subtitle">официальный интернет-ресурс</h3>
           </div>
         </div>
-        <div class="col-xl-4 col-l-4 col-m-12 col-s-12 col-xs-12">
+        <div class="col-xl-2 col-l-2 col-m-2 col-s-4 col-xs-4">
+          <div class="navbar__logo">
+            <img class="navbar__logo__img" src="@/assets/img/logo.png" alt="">
+          </div>
         </div>
+        <div class="col-l-1 col-m-1"></div>
       </div>
     </div>
   </div>
@@ -33,8 +38,12 @@
   margin:0px;
   //background:rgba(1,1,1,.2);
 }
+h2 {
+  @include font(2rem, bold);
+  text-transform:uppercase;
+}
 .header__name__title{
-  @include font(2.4rem, bold);
+  @include font(2.8rem, bold);
   text-transform:uppercase;
 }
 .header__name__border{
@@ -42,10 +51,21 @@
   margin: 3px;
 }
 .header__name__subtitle {
-  font:300 12pt 'Roboto', serif;
-  @include font(0.7rem);
+  //font:300 12pt 'Roboto', serif;
+  @include font(0.8rem);
   color: #444;
   text-transform:uppercase;
+}
+
+
+.navbar__logo {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex:0 0 100%;
+}
+.navbar__logo__img {
+  //max-height:45px;
 }
 
 
