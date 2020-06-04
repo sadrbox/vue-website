@@ -2,7 +2,10 @@
   <div id="header">
     <div class="container">
       <div class="row">
-        <div class="col-l-1 col-m-1">
+        <div style="display:none !important" class="col-xl-1 col-l-2 col-m-2 col-s-4 col-xs-4">
+          <div class="navbar__logo">
+            <img class="navbar__logo__img" src="@/assets/img/logo.png" alt="">
+          </div>
         </div>
         <div class="col-xl-10 col-l-8 col-m-8 col-s-8 col-xs-8">
           <div class="header__name">
@@ -10,11 +13,6 @@
             <h1 class="header__name__title">Отдел образования</h1>
             <hr class="header__name__border" />
             <h3 class="header__name__subtitle">официальный интернет-ресурс</h3>
-          </div>
-        </div>
-        <div class="col-xl-2 col-l-2 col-m-2 col-s-4 col-xs-4">
-          <div class="navbar__logo">
-            <img class="navbar__logo__img" src="@/assets/img/logo.png" alt="">
           </div>
         </div>
         <div class="col-l-1 col-m-1"></div>

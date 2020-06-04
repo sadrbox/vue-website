@@ -2,18 +2,14 @@
   <div id="navbar">
     <div class="container">
       <div class="row">
-        <div class="col-xl-1 col-l-1 col-m-1">
-          <div class="navbar__logo">
-            <img class="navbar__logo__img" src="@/assets/img/logo.png" alt="">
-          </div>
-        </div>
-        <div class="col-xl-9 col-l-9 col-m-8">
+        <div class="col-xl-10 col-l-9 col-m-8">
           <ul class="nav">
-            <li><a href="#"><i class="fas fa-bars fa-2x"></i></a></li>
+            <!-- <li><a href="#"><i class="fas fa-bars fa-2x"></i></a></li>-->
             <li><a href="#"><i class="fas fa-home fa-lg"></i></a></li>
-            <li><a href="#">Методология</a></li>
-            <li><a href="#">Отдел образования</a></li>
-            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Навигация</a></li>
+            <!--<li><a href="#">Методология</a></li>
+              <li><a href="#">Отдел образования</a></li>
+              <li><a href="#">Контакты</a></li>-->
           </ul>
         </div>
         <div class="col-xl-2 col-l-2 col-m-3">
@@ -22,9 +18,9 @@
             <li><a href="#" class="navbar__lang__link--active">Rus</a></li>
             <li><a href="#">Eng</a></li>
           </ul>
-          <div class="navbar__bars">
-            <i class="fas fa-bars fa-2x"></i>
-          </div>
+          <ul class="navbar__bars">
+            <li><a href="#"><i class="fas fa-bars fa-2x"></i></a></li>
+          </ul>
         </div>
       </div>
     </div>
@@ -37,20 +33,24 @@
 #navbar {
   background:rgba(255,255,255,1);
   box-shadow: 0 5px 5px -5px #333;
-  .navbar__bars {display:none;}
+  font-family: 'Roboto', serif;
+  //@include font(1rem);
+  .navbar__bars {display:flex;}
   .nav {
     display: flex;
     height:60px;
     align-items:center;
     li {
       margin-right:30px;
+
       a {
         //color:#3f51b5;
         color:#333;
-        line-height:30px;
+        //line-height:30px;
         text-decoration:none;
         font-weight:normal;
         //font-size:1rem;
+        text-shadow:0px -1px 0px #777;
         &:hover {
           text-decoration:underline;
         }
@@ -75,7 +75,7 @@
   //padding: 10px 0px;
   display:flex;
   align-items:center;
-  justify-content: center;
+  justify-content: flex-end;
   flex:0 0 100%;
   li {
     a {
