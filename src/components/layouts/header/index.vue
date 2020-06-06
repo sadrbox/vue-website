@@ -2,11 +2,6 @@
   <div id="header">
     <div class="container">
       <div class="row">
-        <div style="display:none !important" class="col-xl-1 col-l-2 col-m-2 col-s-4 col-xs-4">
-          <div class="navbar__logo">
-            <img class="navbar__logo__img" src="@/assets/img/logo.png" alt="">
-          </div>
-        </div>
         <div class="col-xl-10 col-l-8 col-m-8 col-s-8 col-xs-8">
           <div class="header__name">
             <h2>Толебийский район</h2>
@@ -48,24 +43,12 @@ h2 {
   border:none;
   margin: 3px;
 }
-.header__name__subtitle {
+h3.header__name__subtitle {
   //font:300 12pt 'Roboto', serif;
-  @include font(0.8rem);
+  //@include font(0.8rem);
   color: #444;
   text-transform:uppercase;
 }
-
-
-.navbar__logo {
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  flex:0 0 100%;
-}
-.navbar__logo__img {
-  //max-height:45px;
-}
-
 
 
 

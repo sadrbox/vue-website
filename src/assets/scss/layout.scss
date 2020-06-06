@@ -121,6 +121,7 @@
 // development
 [class*='col']{
   //background: rgba(100,200,200, .5);
+  flex-direction: column;
 }
 #grid > div {
   //background: rgba(200,100,100, .5);
