@@ -1,16 +1,15 @@
 ﻿<template>
   <div id="header">
     <div class="container">
-      <div class="row">
-        <div class="col-xl-10 col-l-8 col-m-8 col-s-8 col-xs-8">
+      <div class="row centered">
+        <div class="col-xl-10 col-l-8 col-m-10 col-s-10 col-xs-12">
           <div class="header__name">
             <h2>Толебийский район</h2>
             <h1 class="header__name__title">Отдел образования</h1>
-            <hr class="header__name__border" />
-            <h3 class="header__name__subtitle">официальный интернет-ресурс</h3>
+            <!--<hr class="header__name__border" />-->
+            <!--<h3 class="header__name__subtitle">официальный интернет-ресурс</h3>-->
           </div>
         </div>
-        <div class="col-l-1 col-m-1"></div>
       </div>
     </div>
   </div>
@@ -21,7 +20,10 @@
 @import "@/assets/scss/_variable";
 
 #header {
-  margin: 40px 0;
+  padding: 80px 0;
+  background: #014780;
+  color: #fff;
+  //background-image: linear-gradient(to top, #fff, #014780 10%);
 }
 
 .header__name {
@@ -44,9 +46,9 @@ h2 {
   margin: 3px;
 }
 h3.header__name__subtitle {
-  //font:300 12pt 'Roboto', serif;
+  font:300 12pt 'Roboto', serif;
   //@include font(0.8rem);
-  color: #444;
+  //color: #444;
   text-transform:uppercase;
 }
 

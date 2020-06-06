@@ -41,10 +41,11 @@
 @import "@/assets/scss/_variable";
 
 #navbar {
-  background:rgba(255,255,255,1);
+  //background:rgba(255,255,255,1);
   box-shadow: 0 5px 5px -5px #333;
   //font-family: 'Roboto', serif;
   //@include font(1rem);
+  background: #014780;
   .nav {
     display: flex;
     min-height:60px;
@@ -59,14 +60,13 @@
       }
 
       a {
-        //color:#3f51b5;
-        color: #0074d0;
+        color:#fff;
+        //color: #0074d0;
         //color:#333;
         //line-height:30px;
         text-decoration:none;
-        font-weight:normal;
-        //font-size:1rem;
-        //text-shadow:0px -1px 0px #777;
+        font-weight:bold;
+
         &:hover {
           text-decoration:underline;
         }
