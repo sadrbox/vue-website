@@ -2,8 +2,54 @@
   <div id="content">
     <div class="container">
       <div class="row">
-        <div class="col-xl-6 col-l-6 col-m-6 col-s-12">
+        <div class="col-xl-7 col-l-7 col-m-12 col-s-12">
           <div class="box__title">Новости</div>
+          <div class="box__news">
+            <div class="box__news__item">
+              <div class="box__news__item__date">25.05.2020</div>
+              <a class="box__news__item__link" href="#">
+                Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее
+              </a>
+            </div>
+          </div>
+          <div class="box__news">
+            <div class="box__news__item">
+              <div class="box__news__item__date">25.05.2020</div>
+              <a class="box__news__item__link" href="#">
+                Сайт рыбатекст поможет дизайнеру, верстальщику
+              </a>
+            </div>
+          </div>
+          <div class="box__news">
+            <div class="box__news__item">
+              <div class="box__news__item__date">25.05.2020</div>
+              <a class="box__news__item__link" href="#">
+                Cгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке
+              </a>
+            </div>
+          </div>
+          <div class="box__news">
+            <div class="box__news__item">
+              <div class="box__news__item__date">25.05.2020</div>
+              <a class="box__news__item__link" href="#">
+                Bебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке
+              </a>
+            </div>
+          </div>
+          <div class="box__news">
+            <div class="box__news__item">
+              <div class="box__news__item__date">25.05.2020</div>
+              <a class="box__news__item__link" href="#">
+                Hесколько абзацев более менее осмысленного текста рыбы на русском языке
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-1 col-l-1">
+          <div class="vl"></div>
+        </div>
+        <div class="col-xl-4 col-l-4 col-m-12 col-s-12">
+          <div class="box__title">Объявления</div>
           <div class="box__news">
             <div class="box__news__item">
               <div class="box__news__item__date">25.05.2020</div>
@@ -65,6 +111,14 @@
   @include font(1rem);
 }
 
+.vl{
+  display:flex;
+  background:#ccc;
+  height:100%;
+  width:1px;
+  margin: 0 auto;
+  //box-shadow:0 0 5px 0px #000;
+}
 .box__title {
   @include font(2rem);
   margin-bottom: 30px;
@@ -74,6 +128,15 @@
   //flex:0 0 100%;
 }
 .box__news {
+  @media (max-width: 1200px) {
+    .box__news__item {
+      flex-direction: column !important;
+      .box__news__item__link {
+        margin:0px !important;
+      }
+    }
+  }
+
   .box__news__item {
     display:flex;
     flex-direction: row;
@@ -90,7 +153,11 @@
       margin-left: 20px;
       text-decoration: none;
       color: #0074d0;
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 }
+
 </style>

@@ -4,7 +4,8 @@
 // max-width - не больше чем указано
 
 
-@media all and (min-width: 1281px) {
+//@media all and (min-width: 1281px) {
+@media all and (min-width: 1200px) {
   .col-xl-1 {width: col(1);}
   .col-xl-2 {width: col(2);}
   .col-xl-3 {width: col(3);}
@@ -21,7 +22,8 @@
   [class*='col-xl']{display:flex (!important);}
 }
 
-@media all and (min-width: 1025px) and (max-width: 1280px) {
+//@media all and (min-width: 1025px) and (max-width: 1280px) {
+@media all and (min-width: 992px) and (max-width: 1199.98px) {
   .col-l-1 {width: col(1);}
   .col-l-2 {width: col(2);}
   .col-l-3 {width: col(3);}
@@ -38,7 +40,8 @@
   [class*='col-l']{display:flex (!important);}
 }
 
-@media all and (min-width: 769px) and (max-width: 1024px) {
+//@media all and (min-width: 769px) and (max-width: 1024px) {
+@media all and (min-width: 768px) and (max-width: 991.98px) {
   .col-m-1 {width: col(1);}
   .col-m-2 {width: col(2);}
   .col-m-3 {width: col(3);}
@@ -55,7 +58,8 @@
   [class*='col-m']{display:flex (!important);}
 }
 
-@media all and (min-width: 481px) and (max-width: 768px) {
+//@media all and (min-width: 481px) and (max-width: 768px) {
+@media all and (min-width: 576px) and (max-width: 767.98px) {
   .col-s-1 {width: col(1);}
   .col-s-2 {width: col(2);}
   .col-s-3 {width: col(3);}
@@ -72,7 +76,8 @@
   [class*='col-s']{display:flex (!important);justify-content: center;}
 }
 
-@media all and (max-width: 480px) { 
+//@media all and (max-width: 480px) { 
+@media all and (max-width: 575.98px) { 
   .col-xs-1 {width: col(1);}
   .col-xs-2 {width: col(2);}
   .col-xs-3 {width: col(3);}
