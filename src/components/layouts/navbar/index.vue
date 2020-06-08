@@ -4,17 +4,17 @@
       <div class="row">
         <div class="col-xl-2 col-l-2 col-m-2">
           <ul class="tool">
-            <li><a href="#" title="Главная страница"><i class="fas fa-home fa-lg"></i></a></li>
-            <li class="__divider"></li>
             <li><a href="#" title="Карта сайта"><i class="fas fa-ellipsis-h fa-lg"></i></a></li>
+            <li class="__divider"></li>
+            <li><a href="#" title="Главная страница"><i class="fas fa-home fa-lg"></i></a></li>
           </ul>
         </div>
-        <div class="col-xl-3 col-l-3 col-m-3">
+        <div class="col-xl-3 col-l-3 col-m-10">
           <ul class="phone">
             <li><span>+7 (72522) 23-24-25</span></li>
           </ul>
         </div>
-        <div class="col-xl-7 col-l-7 col-m-7">
+        <div class="col-xl-7 col-l-7">
           <ul class="nav">
             <!-- <li><a href="#"><i class="fas fa-bars fa-2x"></i></a></li>-->
             <!-- <li><a href="#"><i class="fas fa-home fa-lg"></i></a></li>-->
@@ -55,7 +55,7 @@
   //background:rgba(255,255,255,1);
   box-shadow: 0 5px 5px -5px #333;
   //font-family: 'Roboto', serif;
-  @include font(1rem);
+  @include font(1.1rem);
   background: #014780;
   .tool {
     justify-content:flex-start;
@@ -77,6 +77,7 @@
     min-height:60px;
     align-items:center;
     flex:0 0 100%;
+    padding: 0 10px;
     .__divider {
       background: rgba(255, 255, 255, 0.5);
       height:30%;

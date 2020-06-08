@@ -27,10 +27,11 @@
 }
 
 .header__name {
+  font-family: 'Roboto Slab', serif;
   display:flex;
   flex-direction: column;
   justify-content: center;
-  margin:0px;
+  padding:0 10px;
   //background:rgba(1,1,1,.2);
 }
 h2 {
