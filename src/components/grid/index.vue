@@ -31,7 +31,7 @@
     //background: red;
     height: 100vh;
     width: $column;
-    margin: 0 $gap;
+    margin: 0 $space;
   }
 }
 </style>

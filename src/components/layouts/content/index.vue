@@ -1,8 +1,8 @@
 ﻿<template>
   <div id="content">
     <div class="container">
-      <div class="row centered">
-        <div class="col-xl-7 col-l-7 col-m-10 col-s-10">
+      <div class="row">
+        <div class="col-xl-8 col-l-8 col-m-12 col-s-12">
           <div class="box__title">Новости</div>
           <div class="box__news">
             <div class="box__news__item">
@@ -45,10 +45,12 @@
             </div>
           </div>
         </div>
-        <div class="col-xl-1 col-l-1">
+        <!--
+          <div class="col-xl-1 col-l-1">
           <div class="vl"></div>
-        </div>
-        <div class="col-xl-4 col-l-4 col-m-10 col-s-10">
+          </div>
+        -->
+        <div class="col-xl-4 col-l-4 col-m-12 col-s-12">
           <div class="box__title">Объявления</div>
           <div class="box__news">
             <div class="box__news__item">

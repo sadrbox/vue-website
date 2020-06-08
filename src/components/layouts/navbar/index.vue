@@ -2,12 +2,14 @@
   <div id="navbar">
     <div class="container">
       <div class="row">
-        <div class="col-xl-1 col-l-1 col-m-1">
+        <!--
+          <div class="col-xl-12 col-l-12 col-m-1">
           <div class="navbar__logo">
-            <img class="navbar__logo__img" src="@/assets/img/logo.png" alt="">
+          <img class="navbar__logo__img" src="@/assets/img/logo.png" alt="">
           </div>
-        </div>
-        <div class="col-xl-11 col-l-11 col-m-11">
+          </div>
+        -->
+        <div class="col-xl-12 col-l-12 col-m-12">
           <ul class="nav">
             <!-- <li><a href="#"><i class="fas fa-bars fa-2x"></i></a></li>-->
             <!-- <li><a href="#"><i class="fas fa-home fa-lg"></i></a></li>-->

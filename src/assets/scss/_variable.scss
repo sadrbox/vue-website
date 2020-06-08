@@ -1,18 +1,18 @@
 $container-width: 1280; // px
 
 // const-column
-$const-column-outer: $container-width / 12; // 1280 / 16 = 80
-$const-column-inner: ($const-column-outer - ($const-column-outer / 5));
-$column: ($const-column-inner / $container-width) * 100%; //
+$const-column-outer: $container-width / 12; // 1280 / 12 = 106.666666667
+$const-column-inner: ($const-column-outer - ($const-column-outer / 12)); // 106.6667 - 21.33334 = 85.3334
+$column: ($const-column-inner / $container-width) * 100%; // ( 85.3334 / 0.066666719 ) * 100% = 
 
 // const-gap
-$const-space: $const-column-outer / 5; // 80 / 5 = 16 / 1280 = 0.0125
+$const-space: $const-column-outer / 12; // 80 / 5 = 16 / 1280 = 0.0125
 $space: ($const-space / $container-width) * 100%; //  0.0125 * 100% = 1.25%
 $gap: $space / 2;
 
 @function col($n) {
   @return (
-    (($n * $const-column-inner) + (($n * $const-space) - $const-space)) /
+    (($n * $const-column-inner) + (($n * $const-space) - ($const-space * 2))) /
     $container-width
   ) * 100%;
 }

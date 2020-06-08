@@ -2,7 +2,7 @@
   <div id="header">
     <div class="container">
       <div class="row centered">
-        <div class="col-xl-10 col-l-8 col-m-10 col-s-10 col-xs-12">
+        <div class="col-xl-12 col-l-12 col-m-12 col-s-12 col-xs-12">
           <div class="header__name">
             <h2>Толебийский район</h2>
             <h1 class="header__name__title">Отдел образования</h1>
