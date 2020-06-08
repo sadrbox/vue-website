@@ -49,36 +49,26 @@
             <div class="__title">Новости</div>
           </div>
           <div class="latest__news">
-            <div class="__item">
+            <a href="#" class="__item-link">
               <div class="__date">25.05.2020</div>
-              <a class="__link" href="#">
-                Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее
-              </a>
-            </div>
-            <div class="__item">
+              <div class="__title">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее</div>
+            </a>
+            <a href="#" class="__item-link">
               <div class="__date">25.05.2020</div>
-              <a class="__link" href="#">
-                Сайт рыбатекст поможет дизайнеру, верстальщику
-              </a>
-            </div>
-            <div class="__item">
+              <div class="__title">Сайт рыбатекст поможет дизайнеру, верстальщику</div>
+            </a>
+            <a href="#" class="__item-link">
               <div class="__date">25.05.2020</div>
-              <a class="__link" href="#">
-                Cгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке
-              </a>
-            </div>
-            <div class="__item">
+              <div class="__title">Cгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке</div>
+            </a>
+            <a href="#" class="__item-link">
               <div class="__date">25.05.2020</div>
-              <a class="__link" href="#">
-                Bебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке
-              </a>
-            </div>
-            <div class="__item">
+              <div class="__title">Bебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке</div>
+            </a>
+            <a href="#" class="__item-link">
               <div class="__date">25.05.2020</div>
-              <a class="__link" href="#">
-                Hесколько абзацев более менее осмысленного текста рыбы на русском языке
-              </a>
-            </div>
+              <div class="__title">Hесколько абзацев более менее осмысленного текста рыбы на русском языке</div>
+            </a>
           </div>
         </div>
       </div>
@@ -114,8 +104,9 @@
 
     @include font(2rem);
     margin-bottom: 30px;
-    border-bottom:1px solid #ccc;
+    border-bottom:2px solid #333;
     padding-left:10px;
+    color: #333;
     //box-shadow: 0px 0px 2px 0px #000;
     //display:flex;
     //flex:0 0 100%;
@@ -131,27 +122,46 @@
     }
   }
 
-  .__item {
-    //display:flex;
-    //flex-direction: row;
-    @include font(.8rem);
-    font-family: 'Roboto', serif;
+  .__item-link {
+    display:flex;
+    flex-direction: column;
+    @include font(.9rem, 600);
+    //font-family: 'Roboto', serif;
     margin-bottom: 10px;
-    //border:0px solid #333;
+    border-left:2px solid transparent;
     //background: #e9f5ff;
-    border-radius: 2px;
+    //background: #fff;
+    //border-radius: 2px;
     padding: 10px;
-    //box-shadow: 0px 0px 10px 0px #014780;
-    &:hover { background: #e9f5ff; }
-    .__date {
-      margin-right: 20px;
+    text-decoration: none;
+    color: #777;
+    &:hover { 
+      //background: #e9f5ff; 
+      background: #fff;
+      border-left:2px solid #333;
+      //border-color:red;
+      //box-shadow: 0px -2px 1px 0px #999;
+      .__title {
+        //color: #f44336;
+        //color: #014780;
+        color: #333;
+        //color: red;
+        //text-decoration: underline;
+      }
     }
-    .__link {
+    .__date {
+      //font-weight: normal;
+      //display:inline;
+      //margin-right: 20px;
+      //color: #999;
+    }
+    .__title {
       // background:red;
       text-decoration: none;
-      color: #014780;
+      //color: #777;
+      //color: #014780;
       &:hover {
-        color: #f44336;
+        //color: #f44336;
         //text-decoration: underline;
       }
     }

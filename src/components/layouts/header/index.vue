@@ -20,7 +20,7 @@
 @import "@/assets/scss/_variable";
 
 #header {
-  padding: 80px 0;
+  padding: 40px 0;
   background: #014780;
   color: #fff;
   //background-image: linear-gradient(to top, #fff, #014780 10%);

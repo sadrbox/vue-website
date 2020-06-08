@@ -2,20 +2,26 @@
   <div id="navbar">
     <div class="container">
       <div class="row">
-        <!--
-          <div class="col-xl-12 col-l-12 col-m-1">
-          <div class="navbar__logo">
-          <img class="navbar__logo__img" src="@/assets/img/logo.png" alt="">
-          </div>
-          </div>
-        -->
-        <div class="col-xl-12 col-l-12 col-m-12">
+        <div class="col-xl-2 col-l-2 col-m-2">
+          <ul class="tool">
+            <li><a href="#" title="Главная страница"><i class="fas fa-home fa-lg"></i></a></li>
+            <li class="__divider"></li>
+            <li><a href="#" title="Карта сайта"><i class="fas fa-ellipsis-h fa-lg"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-xl-3 col-l-3 col-m-3">
+          <ul class="phone">
+            <li><span>+7 (72522) 23-24-25</span></li>
+          </ul>
+        </div>
+        <div class="col-xl-7 col-l-7 col-m-7">
           <ul class="nav">
             <!-- <li><a href="#"><i class="fas fa-bars fa-2x"></i></a></li>-->
             <!-- <li><a href="#"><i class="fas fa-home fa-lg"></i></a></li>-->
-            <li><a href="#">Навигация</a></li>
             <li><a href="#">Методология</a></li>
+            <li class="__divider"></li>
             <li><a href="#">Отдел образования</a></li>
+            <li class="__divider"></li>
             <li><a href="#">Контакты</a></li>
           </ul>
         </div>
@@ -24,6 +30,9 @@
   </div>
 </template>
 <script>
+//<div class="navbar__logo">
+//  <img class="navbar__logo__img" src="@/assets/img/logo.png" alt="">
+//  </div>
 
 // <div class="col-xl-2 col-l-2 col-m-3">
 // <ul class="navbar__lang">
@@ -46,17 +55,36 @@
   //background:rgba(255,255,255,1);
   box-shadow: 0 5px 5px -5px #333;
   //font-family: 'Roboto', serif;
-  //@include font(1rem);
+  @include font(1rem);
   background: #014780;
+  .tool {
+    justify-content:flex-start;
+
+    //i{margin-right: 10px;}
+  }
+  .phone {
+    justify-content:flex-end;
+    li>span {
+      //font-weight: 100;
+
+    }  
+  }
   .nav {
+    justify-content:flex-end;
+  }
+  .nav, .tool, .phone {
     display: flex;
     min-height:60px;
     align-items:center;
-    justify-content:flex-end;
     flex:0 0 100%;
+    .__divider {
+      background: rgba(255, 255, 255, 0.5);
+      height:30%;
+      width: 1px;
+    }      
 
     li {
-      margin-right:30px;
+      margin-right:20px;
       &:last-child {
         margin-right:0px;
       }
@@ -64,6 +92,7 @@
       a {
         color:#fff;
         //color: #0074d0;
+        //color: rgba(255, 255, 255, 0.5);
         //color:#333;
         //line-height:30px;
         text-decoration:none;
@@ -72,6 +101,11 @@
         &:hover {
           text-decoration:underline;
         }
+      }
+      span { 
+
+        font-weight: bold;
+        color: #fff; 
       }
     }
   }
