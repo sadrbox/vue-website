@@ -3,43 +3,37 @@
     <div class="container">
       <div class="row">
         <div class="col-xl-8 col-l-8 col-m-12 col-s-12">
-          <div class="box__title">Новости</div>
-          <div class="box__news">
-            <div class="box__news__item">
-              <div class="box__news__item__date">25.05.2020</div>
-              <a class="box__news__item__link" href="#">
+          <div class="layer">
+            <div class="__title">Новости</div>
+          </div>
+          <div class="latest__news">
+            <div class="__item">
+              <div class="__date">25.05.2020</div>
+              <a class="__link" href="#">
                 Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее
               </a>
             </div>
-          </div>
-          <div class="box__news">
-            <div class="box__news__item">
-              <div class="box__news__item__date">25.05.2020</div>
-              <a class="box__news__item__link" href="#">
+            <div class="__item">
+              <div class="__date">25.05.2020</div>
+              <a class="__link" href="#">
                 Сайт рыбатекст поможет дизайнеру, верстальщику
               </a>
             </div>
-          </div>
-          <div class="box__news">
-            <div class="box__news__item">
-              <div class="box__news__item__date">25.05.2020</div>
-              <a class="box__news__item__link" href="#">
+            <div class="__item">
+              <div class="__date">25.05.2020</div>
+              <a class="__link" href="#">
                 Cгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке
               </a>
             </div>
-          </div>
-          <div class="box__news">
-            <div class="box__news__item">
-              <div class="box__news__item__date">25.05.2020</div>
-              <a class="box__news__item__link" href="#">
+            <div class="__item">
+              <div class="__date">25.05.2020</div>
+              <a class="__link" href="#">
                 Bебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке
               </a>
             </div>
-          </div>
-          <div class="box__news">
-            <div class="box__news__item">
-              <div class="box__news__item__date">25.05.2020</div>
-              <a class="box__news__item__link" href="#">
+            <div class="__item">
+              <div class="__date">25.05.2020</div>
+              <a class="__link" href="#">
                 Hесколько абзацев более менее осмысленного текста рыбы на русском языке
               </a>
             </div>
@@ -51,38 +45,37 @@
           </div>
         -->
         <div class="col-xl-4 col-l-4 col-m-12 col-s-12">
-          <div class="box__title">Объявления</div>
-          <div class="box__news">
-            <div class="box__news__item">
-              <a class="box__news__item__link" href="#">
+          <div class="layer">
+            <div class="__title">Новости</div>
+          </div>
+          <div class="latest__news">
+            <div class="__item">
+              <div class="__date">25.05.2020</div>
+              <a class="__link" href="#">
                 Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее
               </a>
             </div>
-          </div>
-          <div class="box__news">
-            <div class="box__news__item">
-              <a class="box__news__item__link" href="#">
+            <div class="__item">
+              <div class="__date">25.05.2020</div>
+              <a class="__link" href="#">
                 Сайт рыбатекст поможет дизайнеру, верстальщику
               </a>
             </div>
-          </div>
-          <div class="box__news">
-            <div class="box__news__item">
-              <a class="box__news__item__link" href="#">
+            <div class="__item">
+              <div class="__date">25.05.2020</div>
+              <a class="__link" href="#">
                 Cгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке
               </a>
             </div>
-          </div>
-          <div class="box__news">
-            <div class="box__news__item">
-              <a class="box__news__item__link" href="#">
+            <div class="__item">
+              <div class="__date">25.05.2020</div>
+              <a class="__link" href="#">
                 Bебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке
               </a>
             </div>
-          </div>
-          <div class="box__news">
-            <div class="box__news__item">
-              <a class="box__news__item__link" href="#">
+            <div class="__item">
+              <div class="__date">25.05.2020</div>
+              <a class="__link" href="#">
                 Hесколько абзацев более менее осмысленного текста рыбы на русском языке
               </a>
             </div>
@@ -116,43 +109,50 @@
   margin: 0 auto;
   //box-shadow:0 0 5px 0px #000;
 }
-.box__title {
-  @include font(2rem);
-  margin-bottom: 30px;
-  border-bottom:1px solid #ccc;
-  //box-shadow: 0px 0px 2px 0px #000;
-  //display:flex;
-  //flex:0 0 100%;
+.layer {
+  .__title {
+
+    @include font(2rem);
+    margin-bottom: 30px;
+    border-bottom:1px solid #ccc;
+    padding-left:10px;
+    //box-shadow: 0px 0px 2px 0px #000;
+    //display:flex;
+    //flex:0 0 100%;
+  }
 }
-.box__news {
+.latest__news {
   @media (max-width: 1200px) {
-    .box__news__item {
+    .__item {
       flex-direction: column !important;
-      .box__news__item__link {
+      .__link {
         margin:0px !important;
       }
     }
   }
 
-  .box__news__item {
-    display:flex;
-    flex-direction: row;
-    //@include font(.89rem);
-    //font-family: 'Roboto', serif;
-    margin-bottom: 30px;
+  .__item {
+    //display:flex;
+    //flex-direction: row;
+    @include font(.8rem);
+    font-family: 'Roboto', serif;
+    margin-bottom: 10px;
     //border:0px solid #333;
-    background: #fff;
-    //border-radius: 2px;
-    //padding: 10px;
-    //box-shadow: 0px 0px 2px 0px #000;
-    .box__news__item__date {
+    //background: #e9f5ff;
+    border-radius: 2px;
+    padding: 10px;
+    //box-shadow: 0px 0px 10px 0px #014780;
+    &:hover { background: #e9f5ff; }
+    .__date {
       margin-right: 20px;
     }
-    .box__news__item__link {
+    .__link {
+      // background:red;
       text-decoration: none;
-      color: #0074d0;
+      color: #014780;
       &:hover {
-        text-decoration: underline;
+        color: #f44336;
+        //text-decoration: underline;
       }
     }
   }
