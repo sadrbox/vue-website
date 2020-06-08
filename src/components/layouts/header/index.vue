@@ -22,7 +22,7 @@
 #header {
   padding: 80px 0;
   background: #014780;
-  color: red;
+  color: #fff;
   //background-image: linear-gradient(to top, #fff, #014780 10%);
 }
 
