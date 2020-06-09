@@ -124,10 +124,11 @@
     //border-radius: 2px;
     padding: 10px;
     text-decoration: none;
-    color: #333;
+    //color: #333;
+    color: #014780;
     &:hover { 
-      //background: #e9f5ff; 
-      background: #fff;
+      background: #e9f5ff; 
+      //background: #fff;
       border-left:2px solid red;
       //border-color:red;
       //box-shadow: 0px -2px 1px 0px #999;
@@ -136,14 +137,14 @@
         //color: #014780;
         //color: #014780;
         color: red;
-        //text-decoration: underline;
+        text-decoration: underline;
       }
     }
     .__date {
       //font-weight: normal;
       //display:inline;
       //margin-right: 20px;
-      //color: #999;
+      color: #333;
     }
     .__title {
       // background:red;

@@ -2,27 +2,31 @@
   <div id="navbar">
     <div class="container">
       <div class="row">
-        <div class="col-xl-2 col-l-2 col-m-2">
-          <ul class="tool">
-            <li><a href="#" title="Карта сайта"><i class="fas fa-ellipsis-h fa-lg"></i></a></li>
-            <li class="__divider"></li>
-            <li><a href="#" title="Главная страница"><i class="fas fa-home fa-lg"></i></a></li>
-          </ul>
-        </div>
-        <div class="col-xl-3 col-l-3 col-m-10">
+        <!--
+          <div class="col-xl-2 col-l-2 col-m-10">
           <ul class="phone">
-            <li><span>+7 (72522) 23-24-25</span></li>
+          <li><span>+7 (72522) 23-24-25</span></li>
           </ul>
-        </div>
-        <div class="col-xl-7 col-l-7">
+          </div>
+        -->
+        <div class="col-xl-8 col-l-8 col-m-8">
           <ul class="nav">
             <!-- <li><a href="#"><i class="fas fa-bars fa-2x"></i></a></li>-->
             <!-- <li><a href="#"><i class="fas fa-home fa-lg"></i></a></li>-->
-            <li><a href="#">Методология</a></li>
-            <li class="__divider"></li>
             <li><a href="#">Отдел образования</a></li>
             <li class="__divider"></li>
+            <li><a href="#">Методология</a></li>
+            <li class="__divider"></li>
             <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="col-xl-4 col-l-4 col-m-4">
+          <ul class="tool">
+            <li><a href="#" title="Главная страница"><i class="fas fa-home fa-lg"></i></a></li>
+            <li class="__divider"></li>
+            <li><a href="#" title="Управление"><i class="fas fa-user-shield"></i></a></li>
+            <li class="__divider"></li>
+            <li><a href="#" title="Карта сайта"><i class="fas fa-ellipsis-h fa-lg"></i></a></li>
           </ul>
         </div>
       </div>
@@ -58,7 +62,7 @@
   @include font(1.1rem);
   background: #014780;
   .tool {
-    justify-content:flex-start;
+    justify-content:flex-end;
 
     //i{margin-right: 10px;}
   }
@@ -70,7 +74,7 @@
     }  
   }
   .nav {
-    justify-content:flex-end;
+    justify-content:flex-start;
   }
   .nav, .tool, .phone {
     display: flex;
@@ -79,7 +83,7 @@
     flex:0 0 100%;
     padding: 0 10px;
     .__divider {
-      background: rgba(255, 255, 255, 0.5);
+      background: rgba(200, 200, 200, 0.5);
       height:30%;
       width: 1px;
     }      
