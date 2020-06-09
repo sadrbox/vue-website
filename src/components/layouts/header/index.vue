@@ -1,36 +1,52 @@
 ﻿<template>
-  <div id="header">
-    <div class="container">
-      <div class="row centered">
-        <div class="col-xl-12 col-l-12 col-m-12 col-s-12 col-xs-12">
-          <div class="header__name">
-            <h2>Толебийский район</h2>
-            <h1 class="header__name__title">Отдел образования</h1>
-            <!--<hr class="header__name__border" />-->
-            <!--<h3 class="header__name__subtitle">официальный интернет-ресурс</h3>-->
+  <div>
+    <Navbar></Navbar>
+    <div id="header">
+      <div class="container">
+        <div class="row centered">
+          <div class="col-xl-12 col-l-12 col-m-12 col-s-12 col-xs-12">
+            <div class="header__name">
+              <h2>Толебийский район</h2>
+              <h1 class="header__name__title">Отдел образования</h1>
+              <!--<hr class="header__name__border" />-->
+              <!--<h3 class="header__name__subtitle">официальный интернет-ресурс</h3>-->
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <Breadcrumbs></Breadcrumbs>
   </div>
 </template>
 <script>
+
+import Navbar from './navbar.vue';
+import Breadcrumbs from './breadcrumbs.vue';
+
+export default {
+  name: 'Layout',
+  components: {
+    Navbar,
+    Breadcrumbs
+  }
+}
 </script>
 <style lang="scss" scoped>
 @import "@/assets/scss/_variable";
 
 #header {
-  padding: 80px 0;
+  padding: 40px 0;
   background: #014780;
   color: #fff;
   //background-image: linear-gradient(to top, #fff, #014780 10%);
 }
 
 .header__name {
+  font-family: 'Roboto Slab', serif;
   display:flex;
   flex-direction: column;
   justify-content: center;
-  margin:0px;
+  padding:0 10px;
   //background:rgba(1,1,1,.2);
 }
 h2 {
