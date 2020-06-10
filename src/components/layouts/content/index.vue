@@ -52,10 +52,36 @@
             </div>
           </div>
         </div>
-        <div class="col-xl-2 col-l-1"></div>
-        <div class="col-xl-4 col-l-4 col-m-4 col-s-12">
+        <div class="col-xl-3 col-l-3 col-m-3 col-s-12">
           <div class="layer">
             <div class="__title">Новости</div>
+          </div>
+          <div class="latest__news">
+            <a href="#" class="__item-link">
+              <div class="__date">25.05.2020</div>
+              <div class="__title">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее</div>
+            </a>
+            <a href="#" class="__item-link">
+              <div class="__date">25.05.2020</div>
+              <div class="__title">Сайт рыбатекст поможет дизайнеру, верстальщику</div>
+            </a>
+            <a href="#" class="__item-link">
+              <div class="__date">25.05.2020</div>
+              <div class="__title">Cгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке</div>
+            </a>
+            <a href="#" class="__item-link">
+              <div class="__date">25.05.2020</div>
+              <div class="__title">Bебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке</div>
+            </a>
+            <a href="#" class="__item-link">
+              <div class="__date">25.05.2020</div>
+              <div class="__title">Hесколько абзацев более менее осмысленного текста рыбы на русском языке</div>
+            </a>
+          </div>
+        </div>
+        <div class="col-xl-3 col-l-3 col-m-3 col-s-12">
+          <div class="layer">
+            <div class="__title">Объявления</div>
           </div>
           <div class="latest__news">
             <a href="#" class="__item-link">
@@ -91,10 +117,10 @@
 
 .layer {
   .__title {
-    font-family: 'Roboto Slab', serif;
-    @include font(2rem, 400);
+    //font-family: 'Roboto Slab', serif;
+    @include font(1.2rem, 400);
     margin-bottom: 30px;
-    border-bottom:2px solid #333;
+    border-bottom:1px solid #333;
     padding-left:10px;
     color: #333;
     //box-shadow: 0px 0px 2px 0px #000;
@@ -112,24 +138,33 @@
     }
   }
 
+
   .__item-link {
+    //background-color: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8) ), url('https://picsum.photos/200/300');
+    //background-image: url('https://picsum.photos/200/300');
+    background-size: cover;
+    background-position: center;
+    //background-origin: content-box;
+
+
     display:flex;
     flex-direction: column;
-    @include font(.9rem, 200);
+    //@include font(.9rem, 200);
     //font-family: 'Roboto', serif;
     margin-bottom: 10px;
-    border-left:2px solid #333; //transparent;
+    //border-left:1px solid #333; //transparent;
     //background: #e9f5ff;
     //background: #fff;
-    //border-radius: 2px;
+    border-radius: 2px;
     padding: 10px;
     text-decoration: none;
-    //color: #333;
-    color: #014780;
+    //color: #ccc;
+    //color: #014780;
     &:hover { 
       background: #e9f5ff; 
       //background: #fff;
-      border-left:2px solid red;
+      //border-left:1px solid red;
       //border-color:red;
       //box-shadow: 0px -2px 1px 0px #999;
       .__title {
@@ -144,12 +179,15 @@
       //font-weight: normal;
       //display:inline;
       //margin-right: 20px;
-      color: #333;
+      text-align: right;
+      @include font(.7rem);
+      color: #ddd;
     }
     .__title {
       // background:red;
+      @include font(.8rem);
       text-decoration: none;
-      //color: #777;
+      color: #fff;
       //color: #014780;
       &:hover {
         //color: #f44336;

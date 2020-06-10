@@ -59,7 +59,7 @@
   //background:rgba(255,255,255,1);
   box-shadow: 0 5px 5px -5px #333;
   //font-family: 'Roboto', serif;
-  @include font(1.1rem);
+  //@include font(1.1rem);
   background: #014780;
   .tool {
     justify-content:flex-end;
