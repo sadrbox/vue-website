@@ -1,6 +1,8 @@
 ﻿@import "variable";
 @import "reset";
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
 // @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400;500;600;700;800&display=swap');
 //@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;600&display=swap');
@@ -15,11 +17,12 @@ $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
 @import "~@fortawesome/fontawesome-free/scss/brands"; // fab
 
 body {
+  //font-family: 'Open Sans', sans-serif;
   //font-family:'Roboto Slab', serif;
-  //font-family:'Roboto', serif;
+  font-family:'Roboto', serif;
   //font-family:'Roboto Slab', serif;
   //font-family: 'Open Sans', sans-serif;
-  font-family: 'PT Sans', sans-serif;
+  //`font-family: 'PT Sans', sans-serif;
   @include font(1rem, 300);
   //line-height: 1.8rem;
 

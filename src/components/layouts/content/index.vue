@@ -150,7 +150,7 @@
 
     display:flex;
     flex-direction: column;
-    //@include font(.9rem, 200);
+    //@include font(.9rem, 600);
     //font-family: 'Roboto', serif;
     margin-bottom: 10px;
     //border-left:1px solid #333; //transparent;
@@ -180,12 +180,12 @@
       //display:inline;
       //margin-right: 20px;
       text-align: right;
-      @include font(.7rem);
+      @include font(.7rem, 600);
       color: #ddd;
     }
     .__title {
       // background:red;
-      @include font(.8rem);
+      @include font(.8rem, 600);
       text-decoration: none;
       color: #fff;
       //color: #014780;
