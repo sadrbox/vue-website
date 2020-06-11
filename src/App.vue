@@ -1,21 +1,20 @@
 <template>
   <div id="app">
     <Grid></Grid>
-    <Home></Home>
-    <Layout></Layout>
+    <router-link to="/home">Home</router-link>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
 import Grid from './components/grid/index.vue'
-import Layout from './components/layouts/index.vue'
+//import Layout from './components/layouts/index.vue'
 //import Home from '@/components/section/home/index.vue'
 
 export default {
   name: 'App',
   components: {
-    Grid,
-    Layout
+    Grid
   }
 }
 </script>
