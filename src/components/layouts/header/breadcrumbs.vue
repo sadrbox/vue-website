@@ -1,11 +1,11 @@
 ﻿<template>
   <div id="breadcrumbs">
     <div class="container">
-      <div class="row">
-        <div class="col-xl-12 col-l-12 col-m-12">
+      <div class="row centered">
+        <div class="col-xl-12 col-l-12 col-m-10 col-s-12 col-xs-12">
           <ul>
-            <li><a href="#">Главная</a></li>
-            <li><a href="#">Новости</a></li>
+            <li><router-link to="/">Главная</router-link></li>
+            <li><router-link to="/news">Новости</router-link></li>
           </ul>
         </div>
       </div>
@@ -15,15 +15,17 @@
 
 <style lang="scss" scoped>
 #breadcrumbs {
+  background: #ccc;
   //display:flex;
   //flex-direction: column;
   ul {
     display: flex;
-    padding: 20px 10px 10px 10px;
+    padding: 20px 10px 20px 10px;
     li {
       &::after {
         margin-left: 10px;
-        content: "→";
+        //content: "→";
+        content: "/";
       } 
       &:last-child {
         &::after {
@@ -32,12 +34,14 @@
       }
       margin-right: 10px;
       a {
-        //font-weight: 400;
+        text-transform: uppercase;
+        font-weight: 400;
         //font-family: 'Roboto Slab', serif;
-        color:#014780;
+        //color:#014780;
+        color: #333;
         text-decoration: none;
         &:hover {
-          color: red;
+          //color: red;
           text-decoration: underline;
         }
       }

@@ -4,7 +4,7 @@
     <div id="header">
       <div class="container">
         <div class="row centered">
-          <div class="col-xl-12 col-l-12 col-m-12 col-s-12 col-xs-12">
+          <div class="col-xl-12 col-l-12 col-m-10 col-s-10">
             <div class="header__name">
               <h2>Толебийский район</h2>
               <h1 class="header__name__title">Отдел образования</h1>
@@ -36,7 +36,7 @@ export default {
 
 #header {
   padding: 40px 0;
-  background: #014780;
+  background: $dark_blue;
   color: #fff;
   //background-image: linear-gradient(to top, #fff, #014780 10%);
 }

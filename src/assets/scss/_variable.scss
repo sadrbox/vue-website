@@ -1,3 +1,7 @@
+$dark_blue: #14213d;
+$yellow: #fca311;
+$blue: #004e98;
+
 $container-width: 1280; // px
 
 // const-column
@@ -24,5 +28,5 @@ $gap: $space / 2;
 @mixin font($size, $weight:"normal") {
   font-size: $size;
   font-weight: $weight;
-  line-height: lineHeight($size);
+  line-height: 1.618; //lineHeight($size);
 }

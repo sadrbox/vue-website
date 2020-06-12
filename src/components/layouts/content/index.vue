@@ -2,7 +2,7 @@
   <div id="content">
     <div class="container">
       <div class="row centered">
-        <div class="col-xl-6 col-l-7 col-m-8 col-s-12">
+        <div class="col-xl-6 col-l-6 col-m-8 col-s-12">
           <div class="latest__post">
             <div class="__item">
               <div class="__date">25.05.2020</div>

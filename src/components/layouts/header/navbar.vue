@@ -8,12 +8,15 @@
           <li><span>+7 (72522) 23-24-25</span></li>
           </ul>
           </div>
+          <router-link to="/home">Home</router-link>
         -->
         <div class="col-xl-8 col-l-8 col-m-8">
           <ul class="nav">
             <!-- <li><a href="#"><i class="fas fa-bars fa-2x"></i></a></li>-->
             <!-- <li><a href="#"><i class="fas fa-home fa-lg"></i></a></li>-->
             <li><a href="#">Отдел образования</a></li>
+            <li class="__divider"></li>
+            <li><router-link to="/news">Новости</router-link></li>
             <li class="__divider"></li>
             <li><a href="#">Методология</a></li>
             <li class="__divider"></li>
@@ -22,7 +25,7 @@
         </div>
         <div class="col-xl-4 col-l-4 col-m-4">
           <ul class="tool">
-            <li><a href="#" title="Главная страница"><i class="fas fa-home fa-lg"></i></a></li>
+            <li><router-link to="/" title="Главная страница"><i class="fas fa-home fa-lg"></i></router-link></li>
             <li class="__divider"></li>
             <li><a href="#" title="Управление"><i class="fas fa-user-shield"></i></a></li>
             <li class="__divider"></li>
@@ -60,7 +63,7 @@
   box-shadow: 0 5px 5px -5px #333;
   //font-family: 'Roboto', serif;
   //@include font(1.1rem);
-  background: #014780;
+  background: $dark_blue;
   .tool {
     justify-content:flex-end;
 
@@ -100,6 +103,8 @@
         //color: rgba(255, 255, 255, 0.5);
         //color:#333;
         //line-height:30px;
+        //font-size: .9rem;
+        text-transform: uppercase;
         text-decoration:none;
         font-weight:bold;
 
