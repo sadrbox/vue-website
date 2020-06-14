@@ -4,51 +4,54 @@
       <div class="row centered">
         <div class="col-xl-12 col-l-12 col-m-10 col-s-12 col-xs-12">
           <div class="viewer">
-            <div class="__title">Новости</div>
+            <div class="__label">
+              <i class="far fa-newspaper"></i>
+              <h1>Новости</h1>
+            </div>
+          </div>
+          <div class="list-setup">
+            <ul>
+              <li><a href="#" class="__link __active"><i class="fas fa-list"></i></a></li>
+              <li><a href="#" class="__link"><i class="fas fa-th-list"></i></a></li>
+            </ul>
           </div>
           <ul class="list-news">
             <li>
-              <div class="__date">20.08.2020</div>
+              <div>
+                <span class="__date">20.08.2020</span>
+              </div>
               <router-link class="__link" to="/news/1">Значимость этих проблем настолько очевидна</router-link>
-              <div class="__pretext">
-                Значимость этих проблем настолько очевидна, что рамки и место обучения кадров требуют определения и уточнения направлений прогрессивного развития. Товарищи! начало повседневной работы по формированию позиции в значительной степени обуславливает создание модели развития. Равным образом начало повседневной работы по формированию позиции представляет собой интересный эксперимент проверки новых предложений. Разнообразный и богатый опыт рамки и место обучения кадров позволяет выполнять важные задания по разработке системы обучения кадров, соответствует насущным потребностям. С другой стороны консультация с широким активом позволяет оценить значение систем массового участия. <router-link class="__read-link" to="/news/1">Читать дальше...</router-link>
-              </div>
             </li>  
             <li>
-              <div class="__date">20.08.2020</div>
+              <div>
+                <span class="__date">20.08.2020</span>
+              </div>
               <router-link class="__link" to="/news/1">При создании генератора мы использовали небезизвестный универсальный код речей</router-link>
-              <div class="__pretext">
-                По своей сути рыбатекст является альтернативой традиционному lorem
-                ipsum, который вызывает у некторых людей недоумение при попытках
-                прочитать рыбу текст. В отличии от lorem ipsum, текст рыба на
-                русском языке наполнит любой макет непонятным смыслом и придаст
-                неповторимый колорит советских времен. <router-link class="__read-link" to="/news/1">Читать дальше...</router-link>
-              </div>
             </li>  
             <li>
-              <div class="__date">20.08.2020</div>
+              <div>
+                <span class="__date">20.08.2020</span>
+              </div>
               <router-link class="__link" to="/news/1">По своей сути рыбатекст является альтернативой традиционному</router-link>
-              <div class="__pretext">
-                По своей сути рыбатекст является альтернативой традиционному lorem
-                ipsum, который вызывает у некторых людей недоумение при попытках
-                прочитать рыбу текст. В отличии от lorem ipsum, текст рыба на
-                русском языке наполнит любой макет непонятным смыслом и придаст
-                неповторимый колорит советских времен. <router-link class="__read-link" to="/news/1">Читать дальше...</router-link>
-              </div>
             </li>  
             <li>
-              <div class="__date">20.08.2020</div>
-              <router-link class="__link" to="/news/1">В отличии от lorem ipsum, текст рыба на
-                русском языке наполнит любой макет непонятным смыслом</router-link>
-              <div class="__pretext">
-                По своей сути рыбатекст является альтернативой традиционному lorem
-                ipsum, который вызывает у некторых людей недоумение при попытках
-                прочитать рыбу текст. В отличии от lorem ipsum, текст рыба на
-                русском языке наполнит любой макет непонятным смыслом и придаст
-                неповторимый колорит советских времен. <router-link class="__read-link" to="/news/1">Читать дальше...</router-link>
+              <div>
+                <span class="__date">20.08.2020</span>
               </div>
+              <router-link class="__link" to="/news/1">В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом</router-link>
             </li>  
           </ul>
+          <div class="list-pagination">
+            <ul>
+              <li><a href="#" class="__link"><i class="fas fa-arrow-left"></i></a></li>
+              <li><a href="#" class="__link">1</a></li>
+              <li><a href="#" class="__link">2</a></li>
+              <li><a href="#" class="__link">3</a></li>
+              <li><a href="#" class="__link __active">4</a></li>
+              <li><a href="#" class="__link">5</a></li>
+              <li><a href="#" class="__link"><i class="fas fa-arrow-right"></i></a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -60,51 +63,54 @@
 @import "@/assets/scss/_variable";
 
 .list-news {
-
-  padding: 0px;
+  padding: 10px;
   li {
-    //display: block;
+    display: flex;
+    line-height: 1.2rem;
     //flex-direction: column;
     //align-items: flex-start;
     //justify-content: stretch;
-    padding: 10px;
+    //padding: 10px;
     border-radius: 4px;
     //border-top:1px solid #888;
     //border-left:1px solid #888;
     //border-right:1px solid #888;
     //border-bottom:3px solid #888;
     //background:#e5e5e5;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     .__date {
-      //font-weight: normal;
+      //line-height: 1.2rem;
+      font-weight: normal;
       //display:block;
-      width:80px;
+      //width:80px;
       text-align:center;
-      background: #e9c46a;
-      border-radius: 4px;
-      padding: 0px 4px;
+      //background: #e9c46a;
+      border-radius: 2px;
+      //padding: 3px 4px;
       //display:inline;
-      margin:0px 0px 6px 0;
+      margin:0px 10px 0px 0;
       //text-align: right;
       //font-weight: bold;
-      //@include font(.8rem, 400);
+      //@include font(.8rem, 800);
       //font-family: 'Oswald';
       //color: #333;
-    } //@include font(1rem);
+      //font-size: .8rem;
+    } 
 
     .__link {
       //display:flex;
       color: $blue;
       ////@include font(.9rem);
       //@include font(1rem);
-      font-weight: 800;
+      font-weight: 400;
       text-decoration: none;
-      padding: 6px 0;
+      //padding: 6px 0;
       //font-family: 'PT Sans', serif;
+      //line-height: 1.2rem;
       &:hover {
         color: red;
         //background: #caf0f8;
-        //text-decoration: underline;
+        text-decoration: underline;
       }
     }
     .__pretext {

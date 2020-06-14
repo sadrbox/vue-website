@@ -3,7 +3,7 @@
 
 @import "assets/fonts/style.css";
 //@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
-//@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 //
 //// @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400;500;600;700;800&display=swap');
@@ -47,7 +47,6 @@ video {
 .text {
   text-align: justify;
   //  text-indent: 1.8rem;
-
   // testing
   //  padding: 70px;
   //  height: 800px;
@@ -64,14 +63,97 @@ video {
 }
 
 .viewer {
-  .__title {
-    //font-family: 'Helvetica Neue';
-    //font-family: 'Oswald', serif;
-    @include font(1.4rem, 600);
-    margin: 30px 0;
-    border-bottom:6px solid #888;
-    padding-left:10px;
-    color: #333;
-    text-transform: uppercase;
+  display: flex;
+  border-bottom:6px solid #8d99ae;
+  margin: 10px 0;
+  .__label {
+    display: flex;
+    align-items: center;
+    background: #2b2d42;
+    margin-left:10px;
+    padding: 0 10px 0 10px;
+    @include font(1.4rem, 300);
+    color:#edf2f4;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    h1 {
+      margin-left: 5px;
+      text-transform: uppercase;
+    }
+
+  }
+}
+
+.list-pagination {
+  font-family: 'Oswald';
+  border-top:6px solid #8d99ae;
+  margin: 30px 0;
+  ul {
+    display:flex;
+    margin: 10px;
+    li {
+      margin-right:10px;
+      display: flex;
+      align-items: center;
+      .__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 30px;
+        width: 30px;
+        background: #ccc;
+        color: #333;
+        font-weight: bold;
+        font-size: 100%;
+        text-decoration: none;
+        border-radius: 2px;
+        //box-shadow: 1px 1px 1px 1px #333;
+        &:hover {
+          //box-shadow: -1px -1px 1px 1px #333;
+          //background: #d1d646;
+          //border-radius:1px;
+        }
+      }
+      .__active {
+        background: $dark_blue;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.list-setup {
+
+  ul {
+    margin:0 10px;
+    justify-content: flex-end;
+    display: flex;
+    li {
+      margin-left:10px;
+      display: flex;
+      align-items: center;
+      .__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 30px;
+        width: 30px;
+        background: #ddd;
+        color: #333;
+        font-weight: bold;
+        //font-size: 100%;
+        text-decoration: none;
+        border-radius: 2px;
+        //box-shadow: 1px 1px 1px 1px #333;
+        &:hover {
+          //background: #eee;
+          //box-shadow: -1px -1px 1px 1px #333;
+        }      
+      }
+      .__active {
+        background: $dark_blue;
+        color: #fff;
+      }
+    }
   }
 }

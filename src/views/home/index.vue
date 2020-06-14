@@ -53,9 +53,6 @@
           </div>
         </div>
         <div class="col-xl-3 col-l-3 col-m-5 col-s-10">
-          <div class="layer">
-            <div class="__title">Новости</div>
-          </div>
           <div class="latest__news">
             <a href="#" class="__item-link">
               <div class="__date">25.05.2020</div>
@@ -80,9 +77,7 @@
           </div>
         </div>
         <div class="col-xl-3 col-l-3 col-m-5 col-s-10">
-          <div class="layer">
-            <div class="__title">Объявления</div>
-          </div>
+
           <div class="latest__news">
             <a href="#" class="__item-link">
               <div class="__date">25.05.2020</div>
