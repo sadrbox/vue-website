@@ -5,6 +5,7 @@
         <div class="col-xl-12 col-l-12 col-m-10 col-s-12 col-xs-12">
           <ul>
             <li><router-link to="/">Главная</router-link></li>
+            <li><i class="fas fa-chevron-right"></i></li>
             <li><router-link to="/news">Новости</router-link></li>
           </ul>
         </div>
@@ -14,8 +15,10 @@
 </template>
 
 <style lang="scss" scoped>
+@import '@/assets/scss/_variable';
+
 #breadcrumbs {
-  background: #ccc;
+  // background: #ccc;
   //display:flex;
   //flex-direction: column;
   ul {
@@ -25,7 +28,7 @@
       &::after {
         margin-left: 10px;
         //content: "→";
-        content: "/";
+        //content: '<i class="fas fa-chevron-right"></i>';
       } 
       &:last-child {
         &::after {
@@ -38,11 +41,11 @@
         font-weight: 400;
         //font-family: 'Roboto Slab', serif;
         //color:#014780;
-        color: #333;
-        text-decoration: none;
+        color: $blue;
+        //text-decoration: none;
         &:hover {
           //color: red;
-          text-decoration: underline;
+          text-decoration: none;
         }
       }
     }

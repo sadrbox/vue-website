@@ -1,24 +1,15 @@
-# tmp1
+# ToDo
 
-## Project setup
-```
-npm install
-```
+- 
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+# Notice
+- 
 
-### Lints and fixes files
-```
-npm run lint
-```
+# Check list
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+-
+
+# Probably using 
+
+- font-family: Helvetica Neue, Open Sans, sans-serif; // CSS style

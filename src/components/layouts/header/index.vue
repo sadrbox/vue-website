@@ -36,8 +36,8 @@ export default {
 
 #header {
   padding: 40px 0;
-  background: $dark_blue;
-  color: #fff;
+  //background: $dark_blue;
+  //color: #fff;
   //background-image: linear-gradient(to top, #fff, #014780 10%);
 }
 
