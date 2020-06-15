@@ -6,7 +6,7 @@
           <ul>
             <li><router-link to="/">Главная</router-link></li>
             <li><i class="fas fa-chevron-right"></i></li>
-            <li><router-link to="/news">Новости</router-link></li>
+            <li><router-link to="/post">Новости</router-link></li>
           </ul>
         </div>
       </div>
@@ -38,15 +38,6 @@
       margin-right: 10px;
       a {
         text-transform: uppercase;
-        font-weight: 400;
-        //font-family: 'Roboto Slab', serif;
-        //color:#014780;
-        color: $blue;
-        //text-decoration: none;
-        &:hover {
-          //color: red;
-          text-decoration: none;
-        }
       }
     }
   }
