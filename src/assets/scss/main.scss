@@ -56,10 +56,12 @@ video {
       flex-direction: row;
       align-items: center;
       text-transform: uppercase;
-      @include font(1.4rem, 300);
+      font-weight: 600;
+      //font-size: 1rem;
+      //@include font(1rem, 600);
       background: #2b2d42;
       margin-left:10px;
-      padding: 0 10px 0 10px;
+      padding: 5px 10px 0 10px;
       color:#edf2f4;
       border-top-left-radius: 2px;
       border-top-right-radius: 2px;
@@ -89,10 +91,12 @@ video {
             min-width: 30px;
             padding: 0 5px;
             color: $dark_blue;
+            //text-shadow: 1px 1px 0px #ddd;
             font-weight: bold;
+            line-height: 30px;
             //text-transform: uppercase;
             background: #ddd;
-            //text-decoration: none;
+            text-decoration: none;
             border-radius: 2px;
             i {margin-right: 5px;}
             &:hover {
@@ -123,6 +127,7 @@ video {
             justify-content: center;
             height: 30px;
             width: 30px;
+            line-height: 30px;
             background: #ddd;
             color: $dark_blue;
             font-weight: bold;
@@ -156,6 +161,7 @@ video {
             height: 30px;
             width: 30px;
             background: #ddd;
+            line-height: 30px;
             color: $dark_blue;
             //font-weight: bold;
             text-decoration: none;

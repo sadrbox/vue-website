@@ -18,13 +18,14 @@
 @import '@/assets/scss/_variable';
 
 #breadcrumbs {
-  // background: #ccc;
+  background: #ddd;
   //display:flex;
   //flex-direction: column;
   ul {
     display: flex;
-    padding: 20px 10px 20px 10px;
+    padding: 10px 10px 10px 10px;
     li {
+      //line-height: 30px;
       &::after {
         margin-left: 10px;
         //content: "→";

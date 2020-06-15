@@ -11,8 +11,8 @@
               <div class="list-tool">
                 <ul>
                   <li><router-link class="__link yellow" to="/post/add">OK</router-link></li>
+                  <li><router-link class="__link" to="/post/add">Сохранить</router-link></li>
                   <li><div class="divider"></div></li>
-                  <li><router-link class="__link" to="/post/add">Записать</router-link></li>
                 </ul>
               </div>
             </div>

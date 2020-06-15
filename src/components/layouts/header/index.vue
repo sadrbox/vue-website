@@ -35,6 +35,7 @@ export default {
 @import "@/assets/scss/_variable";
 
 #header {
+  display: none;
   padding: 40px 0;
   //background: $dark_blue;
   //color: #fff;

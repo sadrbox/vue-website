@@ -91,7 +91,7 @@
   li {
     align-items: center;
     display: flex;
-    line-height: 1.2rem;
+    line-height: 30px;
     border-radius: 2px;
     height:30px;
     padding: 3px 10px;
@@ -106,8 +106,8 @@
       display: flex;
       align-items: center;
       i { 
-        margin-left: 5px;
-        color: #444; 
+        margin-left: 10px;
+        color: #000; 
       }
       .list-item__link {
         margin-left: 15px;
