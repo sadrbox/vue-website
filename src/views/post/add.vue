@@ -17,7 +17,8 @@
               </div>
             </div>
           </div>
-          <div class="list">
+          <div class="form">
+            <Form></Form>
           </div>
         </div>
       </div>
@@ -25,6 +26,14 @@
   </div>
 </template>
 <script>
+import Form from "./form";
+
+export default {
+  components: {
+    Form
+  }
+}
+
 </script>
 <style lang="scss" scoped>
 @import "@/assets/scss/_variable";
@@ -72,6 +81,11 @@
     }
   }
 }
+
+.form {
+  padding: 10px;
+}
+
 
 
 </style>

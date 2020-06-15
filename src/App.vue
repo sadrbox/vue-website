@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import Grid from './components/grid'
+import Grid from '@/components/grid'
 import Header from '@/components/layouts/header'
 //import Home from '@/components/section/home/index.vue'
 
