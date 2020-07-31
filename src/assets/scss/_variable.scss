@@ -23,6 +23,13 @@ $gap: $space / 2;
   ) * 100%;
 }
 
+@function span($n) {
+  @return (
+    (($n * $const-column-inner) + (($n * $const-space) - ($const-space * 2))) /
+    $container-width
+  ) * 100%;
+}
+
 @function lineHeight($size) {
   @return ($size * 1.618);
 }

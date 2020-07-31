@@ -23,7 +23,7 @@
   //flex-direction: column;
   ul {
     display: flex;
-    padding: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 0px;
     li {
       //line-height: 30px;
       &::after {
@@ -39,6 +39,7 @@
       margin-right: 10px;
       a {
         text-transform: uppercase;
+        font-weight: 300;
       }
     }
   }

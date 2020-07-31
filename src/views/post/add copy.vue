@@ -2,11 +2,32 @@
   <div id="content">
     <div class="container">
       <div class="row centered">
-        <div class="col-xl-6 col-l-6 col-m-6 col-s-6 col-xs-6">
-          <Form></Form>
-        </div>
-        <div class="col-xl-6 col-l-6 col-m-6 col-s-6 col-xs-6">
-          <Form></Form>
+        <div class="col-xl-12 col-l-12 col-m-12 col-s-12 col-xs-12">
+          <div class="viewer">
+            <div class="viewer__top">
+              <h2 class="viewer__title">
+                <i class="far fa-newspaper"></i>Новости
+              </h2>
+            </div>
+            <div class="viewer__bottom">
+              <div class="list-tool">
+                <ul>
+                  <li>
+                    <router-link class="__link yellow" to="/post/add">OK</router-link>
+                  </li>
+                  <li>
+                    <router-link class="__link" to="/post/add">Сохранить</router-link>
+                  </li>
+                  <li>
+                    <div class="divider"></div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="form">
+            <Form></Form>
+          </div>
         </div>
       </div>
     </div>
@@ -23,7 +44,9 @@ export default {
 </script>
 <style lang="scss" scoped>
 @import "@/assets/scss/_variable";
-
+#content {
+  background: #ddd;
+}
 .list {
   li {
     align-items: center;
@@ -68,5 +91,7 @@ export default {
   }
 }
 
-
+.form {
+  padding: 10px;
+}
 </style>

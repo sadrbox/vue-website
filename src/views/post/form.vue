@@ -1,22 +1,24 @@
 ﻿<template>
-  <div>
-    <div class="field">
-      <label for="label-name">Заголовок</label>
-      <input type="text" name="label-name" />
+  <div class="form">
+    <div class="form-group">
+      <label for="title">Заголовок</label>
+      <input class="" type="text" name="title" v-bind:value="msg" />
+    </div>
+    <div class="form-group">
+      <label for="text">Текст</label>
+      <textarea class="" name="text" cols="30" rows="10"></textarea>
     </div>
   </div>
 </template>
-<style lang="scss" scoped>
-.field {
-  label {}
-  input {
-    line-height: 1.21428571em;
-    padding: .67857143em 1em;
-    font-size: 1em;
-    background: #fff;
-    border: 1px solid rgba(34,36,38,.15);
-    color: rgba(0,0,0,.87);
-    border-radius: .28571429rem;  
+<script>
+export default {
+  data() {
+    return {
+      msg: "Район образован 1 февраля 1932 года из части ликвидированного Чимкентского района как Бадамский район Южно-Казахстанской области, центр района — город Чимкент",
+    }
   }
 }
+</script>
+<style lang="scss" scoped>
+
 </style>
