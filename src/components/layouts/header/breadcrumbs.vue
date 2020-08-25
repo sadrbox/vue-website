@@ -1,15 +1,14 @@
 ﻿<template>
   <div id="breadcrumbs">
-    <div class="container">
-      <div class="row centered">
-        <div class="col-xl-12 col-l-12 col-m-10 col-s-12 col-xs-12">
-          <ul>
-            <li><router-link to="/">Главная</router-link></li>
-            <li><i class="fas fa-chevron-right"></i></li>
-            <li><router-link to="/post">Новости</router-link></li>
-          </ul>
-        </div>
-      </div>
+    <div class="column">
+      <ul>
+        <li><router-link to="/"><img
+                         src="https://img.icons8.com/ios-filled/16/000000/booking.png"/></router-link></li>
+        <li><span><img src="https://img.icons8.com/ios-filled/20/999999/thick-vertical-line.png"/></span></li>
+        <li><router-link to="/"><img src="https://img.icons8.com/ios-filled/16/000000/squared-menu.png"/></router-link></li>
+        <li><span><img src="https://img.icons8.com/metro/18/999999/chevron-right.png"/></span></li>
+        <li><router-link to="/post">Новости</router-link></li>
+      </ul>
     </div>
   </div>
 </template>
@@ -18,28 +17,32 @@
 @import '@/assets/scss/_variable';
 
 #breadcrumbs {
-  background: #ddd;
+  background: #d8d8d8;
+  //color: #91b0ce;
+  color: #adadad;
   //display:flex;
   //flex-direction: column;
   ul {
-    display: flex;
-    padding: 10px 10px 10px 0px;
+    display: grid;
+    grid-auto-columns: auto;
+    grid-auto-flow: column;
+    align-items: center;    
+    justify-content: flex-start;
+    max-height:40px;
+    min-height:40px;
     li {
-      //line-height: 30px;
-      &::after {
-        margin-left: 10px;
-        //content: "→";
-        //content: '<i class="fas fa-chevron-right"></i>';
-      } 
-      &:last-child {
-        &::after {
-          content: "";
-        }
-      }
-      margin-right: 10px;
       a {
-        text-transform: uppercase;
-        font-weight: 300;
+        display: grid;
+        text-decoration: underline;
+        //margin-right: 10px;
+        &:hover{
+          text-decoration: none;
+        }
+
+      }
+      span{
+        display:grid;
+        margin:0 10px;
       }
     }
   }

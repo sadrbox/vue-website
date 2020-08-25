@@ -21,21 +21,25 @@
   position: absolute;
   z-index:99999;
   pointer-events: none;
-  margin: 0 auto;
-  max-width: $container-width + px;
+  //margin-left:$gap;
+  //max-width: $container-width + px;
   width: 100%;
-  display: flex;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  justify-content: space-evenly;
   align-self: center;
+  //gap: 16px;
+  //padding: 0 $space;
 
   div {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    //display: grid;
+    //text-align: center;
+    //align-items: center;
+    //justify-content: center;
     //background: rgba(200,100,100, .2);
-    height: 100vh;
-    width: $column;
-    margin: 0 $space;
+    //width: $column;
+    margin: 0 10px;
   }
 }
 </style>

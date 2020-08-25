@@ -1,76 +1,44 @@
 ﻿<template>
   <div id="navbar">
-    <div class="container">
-      <div class="row">
-        <!--
-          <div class="col-xl-2 col-l-2 col-m-10">
-          <ul class="phone">
-          <li><span>+7 (72522) 23-24-25</span></li>
-          </ul>
-          </div>
-          <router-link to="/home">Home</router-link>
-        -->
-        <div class="col-xl-8 col-l-8 col-m-8">
-          <ul class="nav">
-            <!-- <li><a href="#"><i class="fas fa-bars fa-2x"></i></a></li>-->
-            <!-- <li><a href="#"><i class="fas fa-home fa-lg"></i></a></li>-->
-            <li><a href="#">Отдел образования</a></li>
-            <li class="__divider"></li>
-            <li><router-link to="/news">Новости</router-link></li>
-            <li class="__divider"></li>
-            <li><a href="#">Методология</a></li>
-            <li class="__divider"></li>
-            <li><a href="#">Контакты</a></li>
-          </ul>
-        </div>
-        <div class="col-xl-4 col-l-4 col-m-4">
-          <ul class="tool">
-            <li><router-link to="/" title="Главная страница"><i class="fas fa-home fa-lg"></i></router-link></li>
-            <li class="__divider"></li>
-            <li><a href="#" title="Управление"><i class="fas fa-user-shield"></i></a></li>
-            <li class="__divider"></li>
-            <li><a href="#" title="Карта сайта"><i class="fas fa-ellipsis-h fa-lg"></i></a></li>
-          </ul>
-        </div>
-      </div>
+    <div class="column">
+      <ul class="nav">
+        <li><a href="#">Отдел образования</a></li>
+        <li><router-link to="/news">Новости</router-link></li>
+        <li><a href="#">Методология</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </div>
+    <div class="column">
+      <ul class="tool">
+        <li><router-link to="/" title="Главная страница"><i class="fas fa-home fa-lg"></i></router-link></li>
+        <li><a href="#" title="Управление"><i class="fas fa-user-shield"></i></a></li>
+        <li class="__divider"></li>
+        <li><a href="#" title="Карта сайта"><i class="fas fa-ellipsis-h fa-lg"></i></a></li>
+      </ul>
     </div>
   </div>
 </template>
-<script>
-//<div class="navbar__logo">
-//  <img class="navbar__logo__img" src="@/assets/img/logo.png" alt="">
-//  </div>
-
-// <div class="col-xl-2 col-l-2 col-m-3">
-// <ul class="navbar__lang">
-// <li><a href="#">Kaz</a></li>
-// <li><a href="#" class="navbar__lang__link--active">Rus</a></li>
-// <li><a href="#">Eng</a></li>
-// </ul>
-// <ul class="navbar__bars">
-// <li><a href="#"><i class="fas fa-bars fa-2x"></i></a></li>
-// </ul>
-// </div>
-
-
-
-</script>
+<script></script>
 <style lang="scss" scoped>
 @import "@/assets/scss/_variable";
 
+
 #navbar {
+  display:grid;
+  grid-template-columns: 5fr 1fr;
+  justify-content: space-evenly;
   //background:rgba(255,255,255,1);
   //box-shadow: 0 5px 5px -5px #333;
   //font-family: 'Roboto', serif;
   //@include font(1.1rem);
-  background: $dark_blue;
+  //background: $dark_blue;
   .tool {
     justify-content:flex-end;
 
     //i{margin-right: 10px;}
   }
   .phone {
-    justify-content:flex-end;
+    //justify-content:flex-end;
     li>span {
       //font-weight: 100;
 
@@ -80,42 +48,20 @@
     justify-content:flex-start;
   }
   .nav, .tool, .phone {
-    display: flex;
-    min-height:60px;
-    align-items:center;
-    flex:0 0 100%;
-    padding: 0 10px;
-    .__divider {
-      background: rgba(200, 200, 200, 0.5);
-      height:30%;
-      width: 1px;
-    }      
+    display: grid;
+    grid-auto-columns: auto;
+    grid-auto-flow: column;
+    align-items: center;
+    min-height:40px;
+  }      
 
-    li {
-      margin-right:20px;
-      &:last-child {
-        margin-right:0px;
-      }
 
-      a {
-        color:#fff;
-        //color: #0074d0;
-        //color: rgba(255, 255, 255, 0.5);
-        //color:#333;
-        //line-height:30px;
-        //font-size: .9rem;
-        text-transform: uppercase;
-        text-decoration:none;
-        font-weight:bold;
-
-        &:hover {
-          text-decoration:underline;
-        }
-      }
-      span { 
-
-        font-weight: bold;
-        color: #fff; 
+  li {
+    margin-right: 20px;
+    a {
+      text-decoration: underline;
+      &:hover{
+        text-decoration: none;
       }
     }
   }
@@ -147,7 +93,8 @@
       padding: 5px;
       border-radius: 3px;
       text-decoration:none;
-      color:#3f51b5;
+      //color:#3f51b5;
+      //color: #333;
       //background-color: #999;
       min-width:40px;
       text-align:center;

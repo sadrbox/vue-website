@@ -1,15 +1,7 @@
 ﻿<template>
   <div id="content">
-    <div class="container">
-      <div class="row centered">
-        <div class="col-xl-6 col-l-6 col-m-6 col-s-6 col-xs-6">
-          <Form></Form>
-        </div>
-        <div class="col-xl-6 col-l-6 col-m-6 col-s-6 col-xs-6">
-          <Form></Form>
-        </div>
-      </div>
-    </div>
+    <div class="form-part">Новая запись</div>
+    <Form></Form>
   </div>
 </template>
 <script>
@@ -23,6 +15,19 @@ export default {
 </script>
 <style lang="scss" scoped>
 @import "@/assets/scss/_variable";
+
+.form-part{
+  //font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #444;
+  padding-top: 1rem;
+  margin: 0 10px 1rem 10px;
+  border-bottom:4px solid #777;
+
+}
+
 
 .list {
   li {
