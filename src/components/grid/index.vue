@@ -16,7 +16,7 @@
 </template>
 <script></script>
 <style lang="scss">
-@import "@/assets/scss/_variable";
+
 #grid {
   position: absolute;
   z-index:99999;

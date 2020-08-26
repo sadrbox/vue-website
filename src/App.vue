@@ -21,8 +21,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import "@/assets/scss/layout";
-@import "@/assets/scss/main";
 
 #app {
   //min-width: 400px;

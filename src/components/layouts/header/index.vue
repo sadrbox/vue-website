@@ -18,7 +18,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-@import "@/assets/scss/_variable";
+
 
 #header {
   display: none;

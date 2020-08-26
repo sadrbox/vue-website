@@ -1,9 +1,11 @@
-﻿@import "variable";
+﻿// @import url("variable");
 
-// min-width - не меньше чем указано
-// max-width - не больше чем указано
+/*
+min-width - не меньше чем указано
+max-width - не больше чем указано
+*/
 
-//@media all and (min-width: 1281px) {
+
 .s-1 {
   width: span(1);
 }
@@ -84,7 +86,7 @@
   }
 }
 
-//@media all and (min-width: 1025px) and (max-width: 1280px) {
+
 @media all and (min-width: 992px) and (max-width: 1199.98px) {
   .col-l-1 {
     width: col(1);
@@ -128,7 +130,7 @@
   }
 }
 
-//@media all and (min-width: 769px) and (max-width: 1024px) {
+
 @media all and (min-width: 768px) and (max-width: 991.98px) {
   .col-m-1 {
     width: col(1);
@@ -172,7 +174,7 @@
   }
 }
 
-//@media all and (min-width: 481px) and (max-width: 768px) {
+
 @media all and (min-width: 576px) and (max-width: 767.98px) {
   .col-s-1 {
     width: col(1);
@@ -217,7 +219,7 @@
   }
 }
 
-//@media all and (max-width: 480px) {
+
 @media all and (max-width: 575.98px) {
   .col-xs-1 {
     width: col(1);
@@ -278,7 +280,6 @@
 [class*="col-"] {
   //flex-basis:100%;
   padding: 0 $space;
-  // display: none;
 }
 
 .container {
@@ -295,7 +296,7 @@
 }
 
 #content {
-  // margin: $space 0;
+  //margin: $space 0;
 }
 
 // development
@@ -309,6 +310,6 @@
   //display:none;
 }
 
-.column{
+.column {
   margin: 0 10px;
 }

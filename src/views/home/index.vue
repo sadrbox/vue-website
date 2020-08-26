@@ -108,7 +108,7 @@
 <script>
 </script>
 <style lang="scss" scoped>
-@import "@/assets/scss/_variable";
+
 
 .layer {
   .__title {

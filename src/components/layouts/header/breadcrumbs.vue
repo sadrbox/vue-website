@@ -14,7 +14,7 @@
 </template>
 
 <style lang="scss" scoped>
-@import '@/assets/scss/_variable';
+
 
 #breadcrumbs {
   background: #d8d8d8;
