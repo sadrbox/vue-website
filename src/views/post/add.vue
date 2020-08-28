@@ -1,6 +1,5 @@
 ﻿<template>
   <div id="content">
-    <div class="form-part">Новая запись</div>
     <Form></Form>
   </div>
 </template>
@@ -9,13 +8,12 @@ import Form from "./form";
 
 export default {
   components: {
-    Form
-  }
+    Form,
+  },
 };
 </script>
 <style lang="scss" scoped>
-
-.form-part{
+.form-part {
   //font-family: 'Roboto';
   font-weight: 400;
   font-size: 2rem;
@@ -23,10 +21,8 @@ export default {
   color: #444;
   padding-top: 1rem;
   margin: 0 10px 1rem 10px;
-  border-bottom:4px solid #777;
-
+  border-bottom: 4px solid #777;
 }
-
 
 .list {
   li {
@@ -71,6 +67,4 @@ export default {
     }
   }
 }
-
-
 </style>

@@ -5,7 +5,6 @@ min-width - не меньше чем указано
 max-width - не больше чем указано
 */
 
-
 .s-1 {
   width: span(1);
 }
@@ -82,10 +81,9 @@ max-width - не больше чем указано
   }
 
   [class*="col-xl"] {
-    display: flex (!important);
+    display: flex !important;
   }
 }
-
 
 @media all and (min-width: 992px) and (max-width: 1199.98px) {
   .col-l-1 {
@@ -126,10 +124,9 @@ max-width - не больше чем указано
   }
 
   [class*="col-l"] {
-    display: flex (!important);
+    display: flex !important;
   }
 }
-
 
 @media all and (min-width: 768px) and (max-width: 991.98px) {
   .col-m-1 {
@@ -170,10 +167,9 @@ max-width - не больше чем указано
   }
 
   [class*="col-m"] {
-    display: flex (!important);
+    display: flex !important;
   }
 }
-
 
 @media all and (min-width: 576px) and (max-width: 767.98px) {
   .col-s-1 {
@@ -214,11 +210,10 @@ max-width - не больше чем указано
   }
 
   [class*="col-s"] {
-    display: flex (!important);
+    display: flex !important;
     justify-content: center;
   }
 }
-
 
 @media all and (max-width: 575.98px) {
   .col-xs-1 {
@@ -259,7 +254,7 @@ max-width - не больше чем указано
   }
 
   [class*="col-xs"] {
-    display: flex (!important);
+    display: flex !important;
     justify-content: center;
   }
 }

@@ -8,8 +8,9 @@
           @import "~@/assets/scss/_reset.scss";
           @import "~@/assets/scss/main.scss";
           @import "~@/assets/scss/layout.scss";
-          `
-      }
-    }
-  }
+          @import "~@/assets/scss/tmp.scss";
+          `,
+      },
+    },
+  },
 };

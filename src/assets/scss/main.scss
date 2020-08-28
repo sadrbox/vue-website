@@ -7,16 +7,15 @@
 
 // @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+// @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
 //
 //// @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400;500;600;700;800&display=swap');
+// @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400;500;600;700;800&display=swap");
 ////@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
 //@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
 //@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap');
-
+// @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap");
 
 //$fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
 //@import "~@fortawesome/fontawesome-free/scss/fontawesome";
@@ -25,15 +24,18 @@
 //
 //@import "~@fortawesome/fontawesome-free/scss/brands"; // fab
 
-
-* { box-sizing: border-box; }
-html { height: 100%; }
+* {
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
 
 body {
   //font-family: 'Source Sans Pro', sans-serif;
-  font-family: 'Helvetica Neue';
+  // font-family: 'Helvetica Neue';
   //font-family: 'San Francisco';
-  //font-family:'Roboto', serif;
+  font-family: "Roboto", serif;
   //font-family: 'Open Sans', sans-serif;
   //font-family:'Roboto Slab', serif;
   //font-family:'Roboto Slab', serif;
@@ -62,7 +64,7 @@ video {
   margin: 10px 0;
   .viewer__top {
     display: flex;
-    border-bottom:6px solid #2b2d42;
+    border-bottom: 6px solid #2b2d42;
     .viewer__title {
       display: flex;
       flex-direction: row;
@@ -72,12 +74,14 @@ video {
       //font-size: 1rem;
       //@include font(1rem, 600);
       background: #2b2d42;
-      margin-left:10px;
+      margin-left: 10px;
       padding: 5px 10px 0 10px;
-      color:#edf2f4;
+      color: #edf2f4;
       border-top-left-radius: 2px;
       border-top-right-radius: 2px;
-      i {margin-right: 10px;}
+      i {
+        margin-right: 10px;
+      }
       h3 {
         @include font(1rem, 300);
         text-transform: uppercase;
@@ -89,10 +93,10 @@ video {
     justify-content: space-between;
     .list-tool {
       ul {
-        display:flex;
+        display: flex;
         margin: 10px;
         li {
-          margin-right:10px;
+          margin-right: 10px;
           display: flex;
           align-items: center;
           .__link {
@@ -110,7 +114,9 @@ video {
             background: #ddd;
             text-decoration: none;
             border-radius: 2px;
-            i {margin-right: 5px;}
+            i {
+              margin-right: 5px;
+            }
             &:hover {
             }
           }
@@ -123,14 +129,14 @@ video {
     }
     .list-pagination {
       //display: flex;
-      font-family: 'Oswald';
+      font-family: "Oswald";
       //border-top:6px solid #8d99ae;
       //margin: 30px 0;
       ul {
-        display:flex;
+        display: flex;
         margin: 10px;
         li {
-          margin-left:10px;
+          margin-left: 10px;
           display: flex;
           align-items: center;
           .__link {
@@ -160,10 +166,10 @@ video {
     .list-setup {
       display: flex;
       ul {
-        margin:10px;
+        margin: 10px;
         display: flex;
         li {
-          margin-left:10px;
+          margin-left: 10px;
           display: flex;
           align-items: center;
           .__link {
@@ -179,7 +185,7 @@ video {
             text-decoration: none;
             border-radius: 2px;
             &:hover {
-            }      
+            }
           }
           .__active {
             background: $dark_blue;
@@ -199,7 +205,7 @@ video {
 
 .layer {
   display: flex;
-  border-bottom:6px solid #8d99ae;
+  border-bottom: 6px solid #8d99ae;
   margin: 20px 0 10px 0;
   height: 30px;
   .__label {
@@ -207,9 +213,9 @@ video {
     align-items: center;
     @include font(1.4rem, 300);
     background: #2b2d42;
-    margin-left:10px;
+    margin-left: 10px;
     padding: 0 10px 0 10px;
-    color:#edf2f4;
+    color: #edf2f4;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
     h3 {
@@ -219,12 +225,26 @@ video {
   }
 }
 
-a { color: $blue;text-decoration: none;font-weight: 400;
-  &:hover { color: $red; text-decoration: underline; }
+a {
+  color: $blue;
+  text-decoration: none;
+  font-weight: 400;
+  &:hover {
+    color: $red;
+    text-decoration: underline;
+  }
 }
 
-
-.blue { background: $blue !important; }
-.green { background: $green !important; }
-.red { background: $red !important;  }
-.yellow { background: $yellow !important; color: $blue;}
+.blue {
+  background: $blue !important;
+}
+.green {
+  background: $green !important;
+}
+.red {
+  background: $red !important;
+}
+.yellow {
+  background: $yellow !important;
+  color: $blue;
+}

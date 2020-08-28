@@ -1,29 +1,35 @@
 ﻿<template>
-  <div class="form">
-    <div class="column">
-      <div class="form-group">
-        <label for="title">Заголовок</label>
-        <input class="s-2" type="text" name="title" v-bind:value="msg" />
+  <div class="fow">
+    <div class="row form">
+      <div class="column">
+        <div class="form-group">
+          <label for="title">Заголовок</label>
+          <input class="s-2" type="text" name="title" v-bind:value="msg" />
+        </div>
+
+        <div class="form-group">
+          <label for="text">Текст</label>
+          <textarea class name="text" cols="30" rows="10" v-bind:value="msg"></textarea>
+        </div>
       </div>
 
-      <div class="form-group">
-        <label for="text">Текст</label>
-        <textarea class="" name="text" cols="30" rows="10" v-bind:value="msg"></textarea>
+      <div class="column">
+        <div class="form-group">
+          <label>Прикрепленные изображения</label>
+          <div class="attached-img">
+            <div class="img"></div>
+            <div class="img"></div>
+            <div class="img"></div>
+            <div class="img"></div>
+            <div class="img"></div>
+            <div class="img"></div>
+          </div>
+        </div>
       </div>
     </div>
-
-    <div class="column">
-
-      <div class="form-group">
-        <label>Прикрепленные изображения</label>
-        <div class="attached-img">
-          <div class="img"></div>
-          <div class="img"></div>
-          <div class="img"></div>
-          <div class="img"></div>
-          <div class="img"></div>
-          <div class="img"></div>
-        </div>
+    <div class="row buttons">
+      <div class="column">
+        <button>Записать</button>
       </div>
     </div>
   </div>
@@ -32,14 +38,26 @@
 export default {
   data() {
     return {
-      msg: "Район образован 1 февраля 1932 года из части ликвидированного Чимкентского района как Бадамский район Южно-Казахстанской области, центр района — город Чимкент",
-    }
-  }
-}
+      msg:
+        "Район образован 1 февраля 1932 года из части ликвидированного Чимкентского района как Бадамский район Южно-Казахстанской области, центр района — город Чимкент",
+    };
+  },
+};
 </script>
 <style lang="scss" scoped>
-
-
+.buttons {
+  background: #ddd;
+  align-items: center;
+  button {
+    font-weight: bold;
+    font-size: 1rem;
+    border: 1px solid rgb(121, 121, 121);
+    background: rgb(44, 201, 162);
+    border-radius: 2px;
+    height: 40px;
+    width: 120px;
+  }
+}
 .attached-img {
   display: grid;
   grid-template-columns: repeat(auto-fill, 200px);
@@ -47,14 +65,14 @@ export default {
   //justify-content: space-evenly;
   gap: 10px;
 }
-.img{
+.img {
   height: 200px;
   background: #ccc;
 }
 
 .form {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  // display: grid;
+  // grid-template-columns: 1fr 1fr;
 }
 
 .form-group {
@@ -63,17 +81,18 @@ export default {
   //flex-direction: column;
   //background: red;
   label {
-    font-size:18px;
+    font-size: 18px;
     //line-height: 2rem;
     //font-weight: 400;
     //text-transform: uppercase;
     //color: #333;
   }
-  input, textarea {
-    font-family: 'Source Sans Pro', sans-serif;
+  input,
+  textarea {
+    font-family: "Source Sans Pro", sans-serif;
     //font-family: 'Roboto Slab';
     //font-family: 'Helvetica Neue';
-    line-height:1.6rem;
+    line-height: 1.6rem;
     //height:38px;
     font-size: 16px;
     //@include font(14px, 300);
@@ -87,12 +106,11 @@ export default {
     border: 1px solid #9e9e9e;
     //color: rgba(0, 0, 0, 0.87);
     border-radius: 2px;
-    &:focus{
+    &:focus {
       outline: none;
       border: 1px solid #2196f3;
       border-radius: 2px;
     }
   }
 }
-
 </style>
